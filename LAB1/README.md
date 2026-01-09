@@ -28,21 +28,28 @@ print(image.mode) (RGB)
 ### Chuyển sang Grayscale  
 from PIL import ImageOps  
 image_gray = ImageOps.grayscale(image)  
+<img width="279" height="39" alt="image" src="https://github.com/user-attachments/assets/46e5f68c-92aa-4f0d-a6f5-49543d5ebbb9" />  
 ### Lượng tử hóa  
 image_gray.quantize(256 // 2**n)  
+<img width="226" height="39" alt="image" src="https://github.com/user-attachments/assets/2ab69e1f-51ed-43bd-8520-7f05f8970ebb" />  
 --> Hiểu cách giảm độ phân giải ảnh  
 ### Tách kênh màu  
 red, green, blue = baboon.split()  
+<img width="247" height="21" alt="image" src="https://github.com/user-attachments/assets/8c6d9f68-99c5-4957-9e99-7233912bc40f" />  
 --> Làm việc với các kênh RGB.  
 ### Chuyển PIL --> NumPy Array  
 array = np.asarray(image)  
+<img width="186" height="37" alt="image" src="https://github.com/user-attachments/assets/743df8a6-1f2f-4f4e-8333-72efcc2c148f" />  
 array = np.array(image)  
+<img width="172" height="22" alt="image" src="https://github.com/user-attachments/assets/4e95b728-eda9-42c4-b25d-ebcf2f801f6e" />  
 ### Lấy thông tin NumPy Array  
 array.shape, array.min(), array.max()  
 --> Hiểu cấu trúc mảng.  
 ### Slicing ảnh  
 array[0:rows, :, :] (cắt ngang)  
+<img width="215" height="58" alt="image" src="https://github.com/user-attachments/assets/41d26bb6-b2b3-4055-ac62-721bc8399464" />  
 array[:, 0:columns, :] (cắt dọc)  
+<img width="243" height="55" alt="image" src="https://github.com/user-attachments/assets/fd536f81-07a6-41bb-b476-48d623e81658" />  
 ### Làm việc với kênh màu  
 baboon_red = baboon_array.copy()  
 baboon_red[:, :, 1] = 0 (xóa G)  
