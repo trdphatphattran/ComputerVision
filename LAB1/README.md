@@ -21,8 +21,9 @@ import numpy as np
 import matplotlib.pyplot as plt  
 ### Lấy thông tin ảnh  
 print(image.size) (width, height)  
+<img width="128" height="19" alt="image" src="https://github.com/user-attachments/assets/c8a7de26-0d94-4579-8a70-bbb9f5b5f608" />  
 print(image.mode) (RGB)  
-print(image.format) (PNG)  
+<img width="130" height="23" alt="image" src="https://github.com/user-attachments/assets/05e0633c-3148-4323-a167-b4987029f19b" />  
 --> Hiểu cấu trúc dữ liệu ảnh.  
 ### Chuyển sang Grayscale  
 from PIL import ImageOps  
