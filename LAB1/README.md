@@ -56,3 +56,44 @@ baboon_red[:, :, 1] = 0 (xóa G)
 baboon_red[:, :, 2] = 0  (xóa B)  
 
 
+# OPENCV LIBRARY  
+## Phần 1: Cài đặt thư viện  
+pip install opencv-python  
+## Phần 2: Các đoạn mã chính  
+### Import thư viện  
+import cv2  
+import numpy as np  
+import matplotlib.pyplot as plt  
+### Kiểm tra kiểu dữ liệu  
+type(image)  
+image.shape  
+<img width="87" height="20" alt="image" src="https://github.com/user-attachments/assets/b177d7a2-373d-42e0-ab12-262480cea585" />  
+image.max()  
+<img width="83" height="22" alt="image" src="https://github.com/user-attachments/assets/b29b4a3e-b88b-48fa-8457-7e098270481d" />  
+image.min()  
+<img width="84" height="22" alt="image" src="https://github.com/user-attachments/assets/cc1429ba-20be-422f-bac2-123bf4ad3557" />  
+--> Hiểu cấu trúc dữ liệu NumPy Array.  
+### Chuyển đổi định dạng màu  
+new_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  
+<img width="357" height="20" alt="image" src="https://github.com/user-attachments/assets/0fe75c5d-801e-4696-85ba-255db4493fdd" />  
+--> OpenCV dùng BGR, phải chuyển sang RGB để hiển thị đúng màu.  
+### Chuyển sang Grayscale  
+image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  
+<img width="380" height="22" alt="image" src="https://github.com/user-attachments/assets/18ddb9dc-18be-4db8-bfaf-eb64f68886d7" />  
+### Tách các kênh màu  
+blue, green, red = baboon[:, :, 0], baboon[:, :, 1], baboon[:, :, 2]  
+<img width="499" height="24" alt="image" src="https://github.com/user-attachments/assets/373d27ed-be04-4992-8eca-9245598f6220" />  
+--> Làm việc trực tiếp với NumPy Slicing.  
+### Slicing ảnh  
+new_image[0:rows, :, :] (cắt ngang)  
+<img width="248" height="57" alt="image" src="https://github.com/user-attachments/assets/bc728e8e-dc09-4a10-b740-a5ec197bded8" />  
+new_image[:, 0:columns, :] (cắt dọc)  
+<img width="268" height="56" alt="image" src="https://github.com/user-attachments/assets/1a798d9f-8708-4ef1-8590-014e5fa217b6" />  
+--> Trích xuất phần ảnh  
+### Làm việc với kênh màu  
+baboon_red = baboon.copy()  
+baboon_red[:, :, 0] = 0 (xóa B)  
+baboon_red[:, :, 1] = 0 (xóa G)  
+
+
+
