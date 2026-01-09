@@ -96,4 +96,27 @@ baboon_red[:, :, 0] = 0 (xóa B)
 baboon_red[:, :, 1] = 0 (xóa G)  
 
 
+## Hướng dẫn  
+### 1. Cài đặt môi trường  
+Cài python, sau đó cài các thư viện:  
+Dùng tổ hợp phím: Windows + R + cmd.  
+- pip install matplotlib.
+- pip install opencv-python.
+- pip install Pillow.  
+### 2. Chạy notebook  
+- Mở Jupyter Notebook trên VSCode.
+- Code từng bài và chạy để xem kết quả.
+- Nếu xảy ra lỗi như code sai, không có ảnh, chưa tải thư viện -> Không hiển thị kết quả.  
+
+## Tài liệu tham khảo  
+[1]  Images were taken from: https://homepages.cae.wisc.edu/~ece533/images/  
+    
+[2]  <a href='https://pillow.readthedocs.io/en/stable/index.html'>Pillow Docs</a>  
+
+[3]  <a href='https://opencv.org/'>Open CV</a>  
+
+[4] Gonzalez, Rafael C., and Richard E. Woods. "Digital image processing." (2017).  
+
+
+
 
