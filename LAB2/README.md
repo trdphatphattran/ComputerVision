@@ -104,6 +104,29 @@ import matplotlib.pyplot as plt
 <img width="444" height="435" alt="image" src="https://github.com/user-attachments/assets/78815757-1679-40b2-a1e5-93e61d084996" />  
 
 ### Changing Specific Image Pixels  
+- Sao chép array và đặt kênh G và B của vùng cắt thành 0.
+<img width="310" height="42" alt="image" src="https://github.com/user-attachments/assets/cbcd785f-2b73-45bf-92d6-25e982b82ed7" />
+
+--> Kết quả:  
+<img width="448" height="179" alt="image" src="https://github.com/user-attachments/assets/8753fbb3-3697-4347-aab9-fb3db66b3e48" />  
+
+- Vẽ hình chữ nhật trên ảnh với tọa độ đã cho.
+<img width="291" height="58" alt="image" src="https://github.com/user-attachments/assets/4c2f07b6-db27-4655-ad88-77b1731f0470" />
+
+--> Kết quả:  
+<img width="834" height="521" alt="image" src="https://github.com/user-attachments/assets/34f3ea6c-504e-4ec8-8c75-0c1e8171d7db" />  
+
+- Thêm text "box" màu đen tại tọa độ (0, 0).
+<img width="345" height="23" alt="image" src="https://github.com/user-attachments/assets/36c18bb8-ab77-41c4-9ff1-d6c9603c1278" />
+
+--> Kết quả:  
+<img width="838" height="526" alt="image" src="https://github.com/user-attachments/assets/787338a7-fbe0-4cde-9c3c-89ac7f524047" />  
+
+- Thay thế vùng crop trong ảnh bằng chính nó (không thay đổi gì).
+<img width="549" height="20" alt="image" src="https://github.com/user-attachments/assets/f15d9e91-3652-40e4-82b1-839961e8f7a8" />
+
+- Dán vùng bị cắt vào ảnh tại vị trí (left, upper).
+<img width="436" height="423" alt="image" src="https://github.com/user-attachments/assets/b83e27b0-6ba9-4087-a701-9fd872cc34a7" />  
 
 # OPENCV LIBRARY  
 ## Phần 1: Cài đặt thư viện  
