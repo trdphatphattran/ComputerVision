@@ -172,7 +172,7 @@ import matplotlib.pyplot as plt
 <img width="450" height="290" alt="image" src="https://github.com/user-attachments/assets/e9ab8ff1-aa03-43dc-a360-80d7dd2d1a59" />  
 
 - Lật ảnh với các flipcode khác nhau.
-<img width="601" height="64" alt="image" src="https://github.com/user-attachments/assets/ecea5b39-9b08-4bee-a23a-a5302fe48c87" />
+<img width="601" height="64" alt="image" src="https://github.com/user-attachments/assets/ecea5b39-9b08-4bee-a23a-a5302fe48c87" />  
 
 <img width="297" height="39" alt="image" src="https://github.com/user-attachments/assets/862c2a85-8091-4c47-8ccd-46f99f5f589c" />  
 
@@ -191,22 +191,41 @@ import matplotlib.pyplot as plt
 
 <img width="558" height="209" alt="image" src="https://github.com/user-attachments/assets/726e8a80-01ab-48d0-8dea-1dd5be21627d" />  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Cropping an image  
+#### Gắn vào ảnh cat.png  
+- Cắt ảnh từ hàng 150 đến hàng 400 (giả sử).
+<img width="250" height="53" alt="image" src="https://github.com/user-attachments/assets/4f5a7c6e-942e-47bd-a3ff-f96b388f9d76" />
+
+--> Kết quả:  
+<img width="828" height="121" alt="image" src="https://github.com/user-attachments/assets/c4e1b3d7-b9af-45f5-a2c8-ae240d5653bf" />  
+
+- Lấy ảnh từ cột 150 đến 400 (giả sử).
+<img width="316" height="61" alt="image" src="https://github.com/user-attachments/assets/f06b6209-05eb-4b30-8884-1c008b68a719" />
+
+--> Kết quả:  
+<img width="442" height="125" alt="image" src="https://github.com/user-attachments/assets/2461c6c7-84c4-4eef-8d1c-f15cb6fb31f6" />  
 
 ### Changing Specific Image Pixels  
+#### Gán vào ảnh cat.png  
+- Tạo bản sao của ảnh gốc và đặt vùng cắt thành màu đen.
+<img width="289" height="39" alt="image" src="https://github.com/user-attachments/assets/95078a22-d807-4bd9-9a86-55381b879279" />
+
+--> Kết quả:  
+<img width="839" height="289" alt="image" src="https://github.com/user-attachments/assets/044963f4-9eb4-4957-8235-70155f71caef" />  
+
+- Vẽ hình chữ nhật xung quanh vùng đã cắt.
+<img width="647" height="53" alt="image" src="https://github.com/user-attachments/assets/9fec8a61-3569-4eb2-8d6a-4f4977ac20a1" />
+
+--> Kết quả:  
+<img width="448" height="287" alt="image" src="https://github.com/user-attachments/assets/d376cbc2-a858-4e67-8cb6-4d29f87277e1" />  
+
+- Thêm văn bản vào ảnh.  
+<img width="400" height="149" alt="image" src="https://github.com/user-attachments/assets/3c8dcaf4-ace4-410b-a0a9-cbdad02f5bd0" />  
+
+<img width="834" height="23" alt="image" src="https://github.com/user-attachments/assets/8f563035-8119-4302-a814-ec434c5baa32" />  
+
+--> Kết quả:  
+<img width="837" height="524" alt="image" src="https://github.com/user-attachments/assets/5e8e08e9-eb71-450c-aef2-8657a5b31006" />  
 
 ## Hướng dẫn  
 ### 1. Cài đặt môi trường  
