@@ -138,6 +138,32 @@ import numpy as np
 import matplotlib.pyplot as plt  
 
 ### Copying images  
+#### Giả sử gắn vào ảnh baboon.png  
+<img width="830" height="820" alt="image" src="https://github.com/user-attachments/assets/d48cbfa3-eb3d-40cd-b288-e3acae956fb5" />  
+
+--> Minh họa aliasing, nếu thay đổi baboon thì A cũng thay đổi.  
+- Kiểm tra id của A và baboon.
+<img width="147" height="24" alt="image" src="https://github.com/user-attachments/assets/c1bb1d63-bcae-49a5-a7b1-7e926259c26f" />
+
+--> Xác nhận chúng chỉ đến cùng một vị trí.  
+- Sao chép baboon thành B và kiểm tra id.
+<img width="129" height="40" alt="image" src="https://github.com/user-attachments/assets/e9ed90f2-a91d-48d4-8934-36a1c7fc0272" />
+
+--> Tránh aliasing, B không bị ảnh hưởng khi thay đổi baboon.  
+- Đặt tất cả pixel của mảng baboon thành 0.
+<img width="128" height="21" alt="image" src="https://github.com/user-attachments/assets/bd0a1855-7e05-490c-a2fa-fe0265802058" />
+
+--> Kiểm tra aliasing, A sẽ đen như baboon, còn B thì không.
+
+- Hiển thị baboon đen và A cũng đen, aliasing cả 2 giống nhau.
+<img width="838" height="420" alt="image" src="https://github.com/user-attachments/assets/01596565-e876-40b1-96f4-9c9e8c1501e8" />
+
+- Hiển thị baboon đen và B ảnh gốc, copy đúng và B không thay đổi.
+<img width="839" height="419" alt="image" src="https://github.com/user-attachments/assets/ad9bff20-4ec9-4f80-b51f-46666830cbe9" />  
+
+
+
+
 
 ### Flipping images  
 
