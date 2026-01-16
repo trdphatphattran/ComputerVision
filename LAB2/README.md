@@ -28,6 +28,24 @@ import matplotlib.pyplot as plt
 
 ### Changing Specific Image Pixels  
 
+# OPENCV LIBRARY  
+## Phần 1: Cài đặt thư viện  
+pip install opencv-python  
+## Phần 2: Các đoạn mã chính  
+### Import thư viện  
+import cv2  
+import numpy as np  
+import matplotlib.pyplot as plt  
+
+### Copying images  
+
+### Flipping images  
+
+### Cropping an image  
+
+### Changing Specific Image Pixels  
+
+
 
 
 
