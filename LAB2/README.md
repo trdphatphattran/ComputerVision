@@ -142,30 +142,67 @@ import matplotlib.pyplot as plt
 <img width="830" height="820" alt="image" src="https://github.com/user-attachments/assets/d48cbfa3-eb3d-40cd-b288-e3acae956fb5" />  
 
 --> Minh họa aliasing, nếu thay đổi baboon thì A cũng thay đổi.  
-- Kiểm tra id của A và baboon.
-<img width="147" height="24" alt="image" src="https://github.com/user-attachments/assets/c1bb1d63-bcae-49a5-a7b1-7e926259c26f" />
+- Kiểm tra id của A và baboon.  
+<img width="147" height="24" alt="image" src="https://github.com/user-attachments/assets/c1bb1d63-bcae-49a5-a7b1-7e926259c26f" />  
 
 --> Xác nhận chúng chỉ đến cùng một vị trí.  
-- Sao chép baboon thành B và kiểm tra id.
-<img width="129" height="40" alt="image" src="https://github.com/user-attachments/assets/e9ed90f2-a91d-48d4-8934-36a1c7fc0272" />
+- Sao chép baboon thành B và kiểm tra id.  
+<img width="129" height="40" alt="image" src="https://github.com/user-attachments/assets/e9ed90f2-a91d-48d4-8934-36a1c7fc0272" />  
 
 --> Tránh aliasing, B không bị ảnh hưởng khi thay đổi baboon.  
-- Đặt tất cả pixel của mảng baboon thành 0.
-<img width="128" height="21" alt="image" src="https://github.com/user-attachments/assets/bd0a1855-7e05-490c-a2fa-fe0265802058" />
+- Đặt tất cả pixel của mảng baboon thành 0.  
+<img width="128" height="21" alt="image" src="https://github.com/user-attachments/assets/bd0a1855-7e05-490c-a2fa-fe0265802058" />  
 
---> Kiểm tra aliasing, A sẽ đen như baboon, còn B thì không.
+--> Kiểm tra aliasing, A sẽ đen như baboon, còn B thì không.  
 
-- Hiển thị baboon đen và A cũng đen, aliasing cả 2 giống nhau.
-<img width="838" height="420" alt="image" src="https://github.com/user-attachments/assets/01596565-e876-40b1-96f4-9c9e8c1501e8" />
+- Hiển thị baboon đen và A cũng đen, aliasing cả 2 giống nhau.  
+<img width="838" height="420" alt="image" src="https://github.com/user-attachments/assets/01596565-e876-40b1-96f4-9c9e8c1501e8" />  
 
-- Hiển thị baboon đen và B ảnh gốc, copy đúng và B không thay đổi.
-<img width="839" height="419" alt="image" src="https://github.com/user-attachments/assets/ad9bff20-4ec9-4f80-b51f-46666830cbe9" />  
-
-
-
-
+- Hiển thị baboon đen và B ảnh gốc, copy đúng và B không thay đổi.  
+<img width="839" height="421" alt="image" src="https://github.com/user-attachments/assets/eb621a6f-67a2-4d1e-bf1c-695e07165329" />  
 
 ### Flipping images  
+#### Gán vào ảnh cat.png  
+<img width="837" height="521" alt="image" src="https://github.com/user-attachments/assets/00e8900f-cf45-4dbf-9f3f-b7aa307524b0" />  
+
+- Lật ảnh theo chiều ngang bằng vòng lặp.
+<img width="281" height="41" alt="image" src="https://github.com/user-attachments/assets/eb79c215-611e-4c08-90cf-1b992630fdd4" />
+
+--> Kết quả:  
+<img width="450" height="290" alt="image" src="https://github.com/user-attachments/assets/e9ab8ff1-aa03-43dc-a360-80d7dd2d1a59" />  
+
+- Lật ảnh với các flipcode khác nhau.
+<img width="601" height="64" alt="image" src="https://github.com/user-attachments/assets/ecea5b39-9b08-4bee-a23a-a5302fe48c87" />
+
+<img width="297" height="39" alt="image" src="https://github.com/user-attachments/assets/862c2a85-8091-4c47-8ccd-46f99f5f589c" />  
+
+--> Kết quả:  
+<img width="559" height="762" alt="image" src="https://github.com/user-attachments/assets/b76c80db-840f-425d-9ec6-a2884ea69a62" />  
+
+<img width="559" height="374" alt="image" src="https://github.com/user-attachments/assets/bd79113e-637f-4e4c-b031-684296a320f1" />  
+
+- Lật ảnh với các rotate khác nhau như 90 độ thuận/ngược chiều kim đồng hồ, 180 độ, ...
+<img width="1032" height="25" alt="image" src="https://github.com/user-attachments/assets/9674d373-56f3-4b11-b735-df650be044ea" />
+
+<img width="201" height="21" alt="image" src="https://github.com/user-attachments/assets/2dd70957-5d31-4b24-a5cc-1d8a5f9d0c1a" />  
+
+--> Kết quả:  
+<img width="584" height="896" alt="image" src="https://github.com/user-attachments/assets/d013442e-3738-448f-8ad6-eb945a542897" />  
+
+<img width="558" height="209" alt="image" src="https://github.com/user-attachments/assets/726e8a80-01ab-48d0-8dea-1dd5be21627d" />  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Cropping an image  
 
