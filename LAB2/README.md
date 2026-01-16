@@ -36,6 +36,7 @@ Giả sử gán vào ảnh baboon.
 --> Tránh aliasing, B không bị ảnh hưởng khi thay đổi baboon.  
 - Đặt tất cả pixel của mảng baboon thành 0.
 <img width="128" height="21" alt="image" src="https://github.com/user-attachments/assets/bd0a1855-7e05-490c-a2fa-fe0265802058" />
+
 --> Kiểm tra aliasing, A sẽ đen như baboon, còn B thì không.
 
 - Hiển thị baboon đen và A cũng đen, aliasing cả 2 giống nhau.
