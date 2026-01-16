@@ -83,23 +83,25 @@ import matplotlib.pyplot as plt
 
 <img width="825" height="643" alt="image" src="https://github.com/user-attachments/assets/372ff6aa-dd8e-437c-8095-a04a51c28974" />  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Cropping an image  
+#### Giả sử vẫn truyền vào cat.png  
+- Cắt ảnh theo hàng dọc từ 150 đến 400, minh họa crop được bằng slicing trên numpy array.  
+<img width="255" height="57" alt="image" src="https://github.com/user-attachments/assets/d8c86cc5-3c2e-4415-bc89-5749d444ad9c" />
+
+--> Kết quả:  
+<img width="440" height="93" alt="image" src="https://github.com/user-attachments/assets/dada685e-506a-4c5a-9d7e-58995fe60a62" />  
+
+- Cắt ảnh theo cột từ 150 đến 400, minh họa crop ngang để thu hẹp vùng.  
+<img width="318" height="59" alt="image" src="https://github.com/user-attachments/assets/e3def3a8-07f6-4b59-9d60-8622d546b3a0" />  
+
+--> Kết quả:  
+<img width="440" height="125" alt="image" src="https://github.com/user-attachments/assets/61756bdf-80d1-437d-9fb3-54f0c8fde582" />  
+
+- Cắt ảnh với các tọa độ left, upper, right, lower.
+<img width="380" height="39" alt="image" src="https://github.com/user-attachments/assets/92d7c39f-831c-4e58-bb2c-1f4985fff644" />
+
+--> Kết quả:  
+<img width="444" height="435" alt="image" src="https://github.com/user-attachments/assets/78815757-1679-40b2-a1e5-93e61d084996" />  
 
 ### Changing Specific Image Pixels  
 
