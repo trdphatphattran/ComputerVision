@@ -21,6 +21,26 @@ import numpy as np
 import matplotlib.pyplot as plt  
 
 ### Copying images  
+Giả sử gán vào ảnh baboon.  
+- Gán biến A bằng baboon.
+<img width="81" height="20" alt="image" src="https://github.com/user-attachments/assets/89b739c7-9dd7-41ca-8fc4-8a8bdb90dad5" />
+
+--> Minh họa aliasing, nếu thay đổi baboon thì A cũng thay đổi.  
+- Kiểm tra id của A và baboon.
+<img width="147" height="24" alt="image" src="https://github.com/user-attachments/assets/c1bb1d63-bcae-49a5-a7b1-7e926259c26f" />
+
+--> Xác nhận chúng chỉ đến cùng một vị trí.  
+- Sao chép baboon thành B và kiểm tra id.
+<img width="129" height="40" alt="image" src="https://github.com/user-attachments/assets/e9ed90f2-a91d-48d4-8934-36a1c7fc0272" />
+
+--> Tránh aliasing, B không bị ảnh hưởng khi thay đổi baboon.  
+- Đặt tất cả pixel của mảng baboon thành 0.
+<img width="128" height="21" alt="image" src="https://github.com/user-attachments/assets/bd0a1855-7e05-490c-a2fa-fe0265802058" />
+--> Kiểm tra aliasing, A sẽ đen như baboon, còn B thì không.  
+
+
+
+
 
 ### Flipping images  
 
