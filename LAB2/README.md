@@ -21,7 +21,7 @@ import numpy as np
 import matplotlib.pyplot as plt  
 
 ### Copying images  
-Giả sử gán vào ảnh baboon.  
+#### Giả sử gán vào ảnh baboon.  
 - Gán biến A bằng baboon.
 <img width="81" height="20" alt="image" src="https://github.com/user-attachments/assets/89b739c7-9dd7-41ca-8fc4-8a8bdb90dad5" />
 
@@ -46,6 +46,58 @@ Giả sử gán vào ảnh baboon.
 <img width="839" height="419" alt="image" src="https://github.com/user-attachments/assets/ad9bff20-4ec9-4f80-b51f-46666830cbe9" />  
 
 ### Flipping images  
+#### Giả sử gán vào ảnh cat.png.  
+<img width="833" height="521" alt="image" src="https://github.com/user-attachments/assets/6b9bff49-c391-4089-9146-9879cfe8b606" />  
+
+- Sử dụng "flip" để đảo hình ảnh từ trên xuống.
+<img width="226" height="23" alt="image" src="https://github.com/user-attachments/assets/5e1478ac-9e0b-4d77-a0a9-b32903ab3983" />
+
+--> Kết quả:  
+<img width="448" height="289" alt="image" src="https://github.com/user-attachments/assets/ecc2377d-b436-44b2-b78b-b655c23cf212" />  
+
+- Sử dụng "mirror" để lật ảnh sang ngang (trái qua phải).
+<img width="255" height="22" alt="image" src="https://github.com/user-attachments/assets/ddd82a2a-ca92-4317-bd3c-c86ae591ba3f" />
+
+--> Kết quả:  
+<img width="445" height="286" alt="image" src="https://github.com/user-attachments/assets/c37b8efd-19f4-4951-b0b2-705b1fec8f1f" />  
+
+- Sử dụng "transpose" để lật ảnh theo chiều dọc.
+<img width="208" height="20" alt="image" src="https://github.com/user-attachments/assets/2fc6d159-9034-4435-9f83-ce924bf3995c" />
+
+--> Kết quả:  
+<img width="555" height="352" alt="image" src="https://github.com/user-attachments/assets/5fba393f-ed0c-48f9-a43e-3fe6d3467541" />  
+
+- Một số cách khác:  
+<img width="363" height="130" alt="image" src="https://github.com/user-attachments/assets/08d03692-79a8-422a-bd87-e000cc10fd36" />
+
+--> Kết quả:  
+<img width="827" height="579" alt="image" src="https://github.com/user-attachments/assets/70d724e9-b432-4a94-9e97-28cff70ac995" />  
+
+<img width="825" height="644" alt="image" src="https://github.com/user-attachments/assets/ae5cb083-26b8-411a-b536-bb51dea85013" />  
+
+<img width="825" height="281" alt="image" src="https://github.com/user-attachments/assets/3c883898-9a87-43ee-b77f-1223844f63b1" />  
+
+<img width="826" height="643" alt="image" src="https://github.com/user-attachments/assets/2fa75014-916d-4fa8-a6f4-baaeedd0689f" />  
+
+<img width="826" height="642" alt="image" src="https://github.com/user-attachments/assets/e5ea395b-75f2-4585-a713-cf6fd328b331" />  
+
+<img width="825" height="643" alt="image" src="https://github.com/user-attachments/assets/372ff6aa-dd8e-437c-8095-a04a51c28974" />  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Cropping an image  
 
