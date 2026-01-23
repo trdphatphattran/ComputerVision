@@ -55,6 +55,16 @@ Biểu đồ tần suất (Histogram) chủ yếu dùng cho ảnh xám, vốn r�
 - [256]: Số lượng bins, ở đây là 256 mức độ từ đen đến trắng.
 - [0, 256]: Phạm vi cường độ sáng.
 
+<img width="384" height="25" alt="image" src="https://github.com/user-attachments/assets/24ce96fc-53fb-4a9c-aa8a-b71106b57935" />  
+
+Dòng này dùng để tính Probability Mass Function (PMF). Nó không chỉ đếm số lượng mà còn tính toán tỷ lệ phần trăm của mỗi mức sáng trên tổng số pixel của toàn bộ tấm ảnh.  
+
+### 2. Intensity Transformations  
+
+
+
+
+
 
 
 
