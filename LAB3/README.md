@@ -193,6 +193,20 @@ uber-raw-data-jul14.csv
 
 <img width="1221" height="733" alt="image" src="https://github.com/user-attachments/assets/72afd4cd-7af0-4364-a6a3-63b8f43ff48b" />  
 
+# LAB01: LÀM QUEN VỚI ẢNH SỐ TRONG COMPUTER VISION  
+## Phần 1: Cài đặt thư viện  
+pip install opencv-python  
+## Phần 2: Các ví dụ  
+### 1. Kiểm tra xem OpenCV đọc ảnh thế nào và hiển thị chiều của ảnh  
+- Đọc chiều của ảnh bằng shape() và hiển thị ảnh bằng imshow().  
+<img width="492" height="103" alt="image" src="https://github.com/user-attachments/assets/22a034e4-3192-40f8-af72-625cd231f7e7" />  
+
+- Kết quả:
+<img width="556" height="320" alt="image" src="https://github.com/user-attachments/assets/db039e0b-86ce-4740-9b5b-a77f10add10f" />
+
+
+
+
 ## HƯỚNG DẪN  
 ### 1. Cài đặt thư viện quan trọng  
 pip install numpy  
