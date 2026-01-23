@@ -75,6 +75,11 @@ $$
 g(x,y) = L - 1 - f(x,y)  
 $$  
 
+Theo hàm biến đổi cường độ:  
+
+$$  
+s = L - 1 - r  
+$$  
 
 
 
