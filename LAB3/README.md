@@ -134,8 +134,23 @@ $$
 Thresholding là kỹ thuật dùng trong image segmentation nhằm tách đối tượng ra khỏi ảnh.  
 Nguyên lý:  
 - Chọn 1 ngưỡng (threshold).
-- Với mỗi pixel (i, j):
-+ 
+- Với mỗi pixel (i, j): gán 1 hoặc 255 (nếu pixel > ngưỡng), ngược lại gán 0.
+
+--Ví dụ code chính:  
+<img width="481" height="222" alt="image" src="https://github.com/user-attachments/assets/077913c1-3ada-41a2-9c86-45997868cc61" />  
+
+- So sánh từng pixel với ngưỡng. Gán max_value và min_value.
+
+--Ví dụ minh họa:  
+<img width="687" height="83" alt="image" src="https://github.com/user-attachments/assets/cefa1c95-2f2d-4eab-bce5-a3a7abb16d8e" />  
+
+<img width="835" height="422" alt="image" src="https://github.com/user-attachments/assets/d0b65cce-7001-4da2-85d8-44f46bcefcfb" />  
+
+
+
+
+
+
 
 
 
