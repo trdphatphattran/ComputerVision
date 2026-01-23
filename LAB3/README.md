@@ -146,6 +146,13 @@ Nguyên lý:
 
 <img width="835" height="422" alt="image" src="https://github.com/user-attachments/assets/d0b65cce-7001-4da2-85d8-44f46bcefcfb" />  
 
+--Ngoài ra, còn một số thư viện khác như:  
+- cv2.THRESH_BINARY
+- cv2.THRESH_TRUNC
+- cv2.THRESH_OTSU
+
+
+
 
 
 
