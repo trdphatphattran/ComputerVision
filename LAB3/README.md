@@ -16,6 +16,7 @@ Bài này tập trung vào các phép biến đổi ảnh (Pixel Transforms) - l
 
 ## Phần 2: Lý thuyết và ví dụ  
 ### 1. Histograms  
+#### Toy Example  
 Biểu đồ tần suất Histograms là một công cụ dùng để đếm số lần xuất hiện của các mức cường độ sáng (intensity values) trong một hình ảnh. Nó giúp chúng ta hiểu rõ hơn về phân bổ độ sáng và hỗ trợ việc xử lý, thao tác trên hình ảnh.  
 Chúng ta sử dụng hàm cv2.calcHist() để tạo biểu đồ, các tham số được truyền vào như sau:  
 - images: Mảng hình ảnh nguồn.
@@ -42,6 +43,20 @@ Ví dụ:
 - Giá trị 2 chuyển sang mức sáng 5 (số lượng vẫn là 2).
 
 <img width="538" height="416" alt="image" src="https://github.com/user-attachments/assets/cff93811-e077-48d4-b4a5-59cef1a7b9b3" />  
+
+#### Gray Scale Histograms  
+Biểu đồ tần suất (Histogram) chủ yếu dùng cho ảnh xám, vốn rất quan trọng trong y khoa và công nghiệp. Khi xử lý ảnh màu, người ta thường tách ra thành phần độ chói (Luminance - chính là ảnh xám) để tập trung phân tích cường độ sáng.  
+
+<img width="422" height="26" alt="image" src="https://github.com/user-attachments/assets/af46b6eb-27c8-443d-bc9e-c46391f7a6d7" />  
+
+Đây là lệnh thực hiện việc đếm xem mỗi mức sáng xuất hiện bao nhiêu lần:  
+- [goldhill]: Ảnh nguồn.
+- [0]: Kênh màu.
+- [256]: Số lượng bins, ở đây là 256 mức độ từ đen đến trắng.
+- [0, 256]: Phạm vi cường độ sáng.
+
+
+
 
 
 
