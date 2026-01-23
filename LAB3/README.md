@@ -152,6 +152,60 @@ Nguyên lý:
 - cv2.THRESH_OTSU
 
 
+# GIỚI THIỆU VỀ UBER DATASET  
+## Phần 1: Chuẩn bị file dữ liệu  
+uber-raw-data-jul14.csv  
+## Phần 2: Các code chính  
+### 1. Load dữ liệu với pandas  
+<img width="405" height="541" alt="image" src="https://github.com/user-attachments/assets/81264c85-6de2-45eb-94e2-f9e5fe4d0f4e" />  
+
+### 2. Xử lý dữ liệu thời gian  
+- Chuyển dữ liệu sang datetime.
+<img width="463" height="23" alt="image" src="https://github.com/user-attachments/assets/25ba59ec-4762-447f-97d0-4aad6e76c3cf" />
+
+- Đếm số chuyến xe trong từng giờ.
+<img width="518" height="339" alt="image" src="https://github.com/user-attachments/assets/b554c72f-6958-49d5-b247-2c1c6c2318bb" />
+
+### 3. Theo ngày giờ trong tuần  
+<img width="335" height="57" alt="image" src="https://github.com/user-attachments/assets/ca105ffe-ae6b-4301-8241-c041efba07ea" />  
+
+- Lấy feature Hour và Week Day.
+
+<img width="514" height="21" alt="image" src="https://github.com/user-attachments/assets/3592ef6d-927a-40ae-82dd-b7d4c20cc82f" />  
+
+- Trung bình số chuyến cho mỗi giờ trong tuần.
+
+<img width="559" height="596" alt="image" src="https://github.com/user-attachments/assets/d4b61474-2c10-4e06-b026-bcf81483f2a5" />  
+
+- Chuyển sang dạng bảng để phân tích hoặc vẽ heatmap.
+
+### 4. Tính khoảng cách địa lý  
+- Ví dụ cho tọa độ Việt Nam và Trung Quốc như sau:
+<img width="675" height="55" alt="image" src="https://github.com/user-attachments/assets/9ffe659b-7042-456e-9bd7-5b0957066757" />
+
+- Tính khoảng cách Uber đi đến 2 điểm đó:
+<img width="556" height="349" alt="image" src="https://github.com/user-attachments/assets/211c7bc5-627d-466a-8495-88725488c51c" />
+
+### 5. Vẽ bản đồ Trường Đại học Văn Lang CS3  
+- Sử dụng Google Maps, ta thấy VLU CS3 có tọa độ là (10.827620, 106.700011).
+- Code chính để vẽ:
+<img width="632" height="185" alt="image" src="https://github.com/user-attachments/assets/fcbe24e0-dde7-413c-aaa0-33a7b673549d" />
+
+<img width="1221" height="733" alt="image" src="https://github.com/user-attachments/assets/72afd4cd-7af0-4364-a6a3-63b8f43ff48b" />  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
