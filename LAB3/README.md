@@ -25,3 +25,10 @@ Chúng ta sử dụng hàm cv2.calcHist() để tạo biểu đồ, các tham s�
 - ranges: Phạm vi của các chỉ số cường độ, thường là từ [0, L-1].
 - Đối với các hình ảnh thực tế, giá trị L là 256 (0 -> 255).
 
+Ví dụ:  
+-- Vẽ biểu đồ Histograms đầu tiên
+<img width="327" height="41" alt="image" src="https://github.com/user-attachments/assets/131bc255-4dfc-4ea7-a3ec-37dd9de35206" />
+
+
+
+
