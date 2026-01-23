@@ -105,6 +105,14 @@ $$
 g(x,y) = \alpha f(x,y) + \beta  
 $$  
 
+- Để tăng độ sáng (brightness):  
+
+$$  
+\alpha = 1,\quad \beta = 100  
+$$  
+
+
+
 
 
 
