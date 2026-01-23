@@ -98,6 +98,13 @@ $$
 
 - -1 * img + 255 <=> 255 - img (negative).
 
+#### Brightness and contrast adjustments  
+- Ảnh gốc là f(x, y), ảnh sau biến đổi là g(x, y):
+
+$$  
+g(x,y) = \alpha f(x,y) + \beta  
+$$  
+
 
 
 
