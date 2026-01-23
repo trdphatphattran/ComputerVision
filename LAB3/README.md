@@ -69,10 +69,11 @@ Dòng này dùng để tính Probability Mass Function (PMF). Nó không chỉ �
 - Ảnh có L mức cường độ trong khoảng [0, L-1].
 - Image negative biến mỗi mức sáng thành mức tối đối nghịch của nó.
 - Công thức:
-Theo tọa độ ảnh:  
-$$
-g(x,y) = L - 1 - f(x,y)
-$$
+Theo tọa độ ảnh:
+
+$$  
+g(x,y) = L - 1 - f(x,y)  
+$$  
 
 
 
