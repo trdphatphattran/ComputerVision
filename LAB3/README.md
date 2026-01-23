@@ -26,8 +26,27 @@ Chúng ta sử dụng hàm cv2.calcHist() để tạo biểu đồ, các tham s�
 - Đối với các hình ảnh thực tế, giá trị L là 256 (0 -> 255).
 
 Ví dụ:  
--- Vẽ biểu đồ Histograms đầu tiên
-<img width="327" height="41" alt="image" src="https://github.com/user-attachments/assets/131bc255-4dfc-4ea7-a3ec-37dd9de35206" />
+-- Vẽ biểu đồ Histograms đầu tiên  
+<img width="327" height="41" alt="image" src="https://github.com/user-attachments/assets/131bc255-4dfc-4ea7-a3ec-37dd9de35206" />  
+
+- Trục X[0, 1, 2, 3, 4, 5]: Đại diện cho các mức cường độ sáng.
+- Trục Y[1, 5, 2, 0, 0, 0]: Số lượng pixel tương ứng với từng mức sáng (có 1 pixel 0, 5 pixel 1, 2 pixel 2).
+
+<img width="539" height="416" alt="image" src="https://github.com/user-attachments/assets/10d91bff-58a1-49b0-a02c-4e6ce3657269" />  
+
+-- Vẽ biểu đồ Histograms thứ hai  
+<img width="334" height="42" alt="image" src="https://github.com/user-attachments/assets/0b55b1dc-df95-46f7-9f57-67c8febbc7eb" />  
+
+- Giá trị 0 chuyển sang mức sáng 1 (số lượng vẫn là 1).
+- Giá trị 1 chuyển sang mức sáng 3 (số lượng vẫn là 5).
+- Giá trị 2 chuyển sang mức sáng 5 (số lượng vẫn là 2).
+
+<img width="538" height="416" alt="image" src="https://github.com/user-attachments/assets/cff93811-e077-48d4-b4a5-59cef1a7b9b3" />  
+
+
+
+
+
 
 
 
