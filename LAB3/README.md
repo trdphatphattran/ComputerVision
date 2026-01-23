@@ -111,6 +111,20 @@ $$
 \alpha = 1,\quad \beta = 100  
 $$  
 
+--Ví dụ code làm tăng độ sáng:  
+<img width="484" height="63" alt="image" src="https://github.com/user-attachments/assets/a4c918f6-de5d-442f-9e0f-624fbaf0012f" />  
+
+<img width="840" height="419" alt="image" src="https://github.com/user-attachments/assets/e347cbf1-c679-4192-92be-2f7ecd81f6d8" />  
+
+--Ví dụ code là tăng độ tương phản:  
+<img width="490" height="59" alt="image" src="https://github.com/user-attachments/assets/13673962-c384-4db8-b447-94dc302bb9c5" />  
+
+<img width="839" height="419" alt="image" src="https://github.com/user-attachments/assets/2e8cf553-7ad0-4448-a4c1-318f170205fb" />  
+
+
+
+
+
 
 
 
