@@ -60,7 +60,19 @@ Biểu đồ tần suất (Histogram) chủ yếu dùng cho ảnh xám, vốn r�
 Dòng này dùng để tính Probability Mass Function (PMF). Nó không chỉ đếm số lượng mà còn tính toán tỷ lệ phần trăm của mỗi mức sáng trên tổng số pixel của toàn bộ tấm ảnh.  
 
 ### 2. Intensity Transformations  
+- Hình ảnh như một hàm số f(x, y), trong đó x là chỉ số hàng còn y là chỉ số cột.
+- Biến đổi cường độ: Có thể tạo ra hình ảnh mới g(x, y) bằng cách áp dụng một phép biến đổi T lên ảnh cũ: g(x, y) = T(f(x, y)).
+- Ánh xạ mức xám: Vì phép biến đổi này chỉ phụ thuộc vào giá trị cường độ tại một điểm duy nhất, nó còn được gọi là ánh xạ mức xám, ký hiệu là s = T(r) với r là cường độ đầu vào và s là đầu ra.
+- Một phép biến đổi tuyến tính g(x, y) = 2f(x, y) + 1 sẽ nhân đôi giá trị mỗi pixel và cộng thêm 1 đơn vị.
 
+#### Image Negatives  
+- Ảnh có L mức cường độ trong khoảng [0, L-1].
+- Image negative biến mỗi mức sáng thành mức tối đối nghịch của nó.
+- Công thức:
+Theo tọa độ ảnh:
+$$  
+g(x, y) = L - 1 - r  
+$$  
 
 
 
