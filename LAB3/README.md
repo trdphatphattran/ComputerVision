@@ -194,18 +194,54 @@ uber-raw-data-jul14.csv
 <img width="1221" height="733" alt="image" src="https://github.com/user-attachments/assets/72afd4cd-7af0-4364-a6a3-63b8f43ff48b" />  
 
 # LAB01: LÀM QUEN VỚI ẢNH SỐ TRONG COMPUTER VISION  
-## Phần 1: Cài đặt thư viện  
+## Câu 1: Cài đặt thư viện  
 pip install opencv-python  
-## Phần 2: Các ví dụ  
-### 1. Kiểm tra xem OpenCV đọc ảnh thế nào và hiển thị chiều của ảnh  
+## Câu 2. Kiểm tra xem OpenCV đọc ảnh thế nào và hiển thị chiều của ảnh  
 - Đọc chiều của ảnh bằng shape() và hiển thị ảnh bằng imshow().  
 <img width="492" height="103" alt="image" src="https://github.com/user-attachments/assets/22a034e4-3192-40f8-af72-625cd231f7e7" />  
 
 - Kết quả:
 <img width="556" height="320" alt="image" src="https://github.com/user-attachments/assets/db039e0b-86ce-4740-9b5b-a77f10add10f" />
 
+## Câu 3: Show hình ảnh ra cho trực quan, sử dụng plt.imshow. Có nhận xét gì về bức ảnh? Có cách nào để hiển thị đúng hay không?  
+### Cách 1: Đảo chiều matrix  
+<img width="312" height="84" alt="image" src="https://github.com/user-attachments/assets/f94a853d-ba23-4b0f-960a-dfa084f29100" />  
 
+- Kết quả:
+<img width="380" height="126" alt="image" src="https://github.com/user-attachments/assets/c1de4a41-af23-4812-9644-8183b232b56c" />
 
+### Cách 2: Convert các chế độ màu  
+<img width="429" height="28" alt="image" src="https://github.com/user-attachments/assets/c70a2f08-3f7b-46be-877b-1e7de10a730b" />  
+
+- Kết quả:
+<img width="558" height="166" alt="image" src="https://github.com/user-attachments/assets/8958c29d-179c-4055-911e-162daf62cd0d" />
+
+## Câu 4: Phóng to ảnh  
+- Sử dụng cv2.resize và tăng kích thước lên 1000x1000.
+<img width="364" height="25" alt="image" src="https://github.com/user-attachments/assets/ddd3ba5c-b5fc-4a41-b540-abf13376f81c" />
+
+- Kết quả:
+<img width="428" height="422" alt="image" src="https://github.com/user-attachments/assets/61450d9d-e6d0-4294-8299-cd7f4a9ac5a8" />
+
+## Câu 5: Cắt ảnh  
+- Giả sử, cắt ảnh theo các thông số sau:
+<img width="353" height="120" alt="image" src="https://github.com/user-attachments/assets/0ad7945a-1abe-448d-8ff2-36919194bdf8" />
+
+- Kết quả:
+<img width="503" height="421" alt="image" src="https://github.com/user-attachments/assets/7323be78-af77-47b2-bbae-a5b4041a23b6" />
+
+## Câu 6: Ghép dọc và ghép ngang 2 ảnh  
+### Ghép dọc:  
+<img width="584" height="62" alt="image" src="https://github.com/user-attachments/assets/bd0f13be-a43f-4edf-8bc3-14d6dd9d976f" />  
+
+- Kết quả:
+<img width="260" height="423" alt="image" src="https://github.com/user-attachments/assets/cec2b7db-3c96-49b2-9074-a1e3382d0341" />
+
+### Ghép ngang:  
+<img width="584" height="62" alt="image" src="https://github.com/user-attachments/assets/4cf34904-564d-4025-b786-e35102780c3f" />  
+
+- Kết quả:
+<img width="555" height="281" alt="image" src="https://github.com/user-attachments/assets/ae9cd85d-2270-423d-baf0-92413eb44d50" />  
 
 ## HƯỚNG DẪN  
 ### 1. Cài đặt thư viện quan trọng  
