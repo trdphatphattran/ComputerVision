@@ -121,6 +121,25 @@ $$
 
 <img width="839" height="419" alt="image" src="https://github.com/user-attachments/assets/2e8cf553-7ad0-4448-a4c1-318f170205fb" />  
 
+#### Histogram Equalization  
+- Giúp tăng độ tương phản của ảnh bằng cách mở rộng dải mức xám và làm phẳng histogram.
+- Chỉ cần dùng hàm: cv2.equalizeHist().
+
+--Ví dụ code sử dụng:  
+<img width="385" height="37" alt="image" src="https://github.com/user-attachments/assets/5f09b374-4e89-4b7f-8ae2-18526c8a8cdf" />  
+
+<img width="839" height="420" alt="image" src="https://github.com/user-attachments/assets/128402a7-61da-4fa6-8d5d-63a6f454939f" />  
+
+### 3. Thresholding and Simple Segmentation  
+Thresholding là kỹ thuật dùng trong image segmentation nhằm tách đối tượng ra khỏi ảnh.  
+Nguyên lý:  
+- Chọn 1 ngưỡng (threshold).
+- Với mỗi pixel (i, j):
++ 
+
+
+
+
 
 
 
