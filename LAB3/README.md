@@ -93,6 +93,13 @@ $$
 s = 255 - r  
 $$  
 
+--Ví dụ code chính:  
+<img width="552" height="62" alt="image" src="https://github.com/user-attachments/assets/08384937-9c22-4e5b-bde8-13be36831147" />  
+
+- -1 * img + 255 <=> 255 - img (negative).
+
+
+
 
 
 
