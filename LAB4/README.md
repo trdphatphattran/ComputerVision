@@ -280,7 +280,7 @@ Cách làm:
 - Sử dụng lại ảnh cat.jpg
 <img width="343" height="418" alt="image" src="https://github.com/user-attachments/assets/bcbc4c02-db9f-487b-b824-63234596001e" />  
 
-### Câu 1: ## 1. Sử dụng Backward, forward, central gradient để lọc ảnh.  
+### Câu 1: Sử dụng Backward, forward, central gradient để lọc ảnh.  
 Cách làm:  
 <img width="465" height="203" alt="image" src="https://github.com/user-attachments/assets/9893c175-124a-4ba5-9def-d1074ad31e3d" />  
 
@@ -303,6 +303,8 @@ Cách làm: Sử dụng Gaussian 15x15.
 
 ### Câu 4: Sử dụng Sobel detector để xác định biên của ảnh.  
 Cách làm:  
+- 1, 0: Đạo hàm theo trục X (ngang) là bậc 1, trục Y là bậc 0 giúp phát hiện các đường biên cứng.
+- ksize = 3: Kích thước ma trận Sobel là 3x3.  
 <img width="424" height="62" alt="image" src="https://github.com/user-attachments/assets/a758058e-847a-4e68-b79f-488d1f52dfe8" />  
 
 --> Kết quả:  
