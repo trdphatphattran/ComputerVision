@@ -137,6 +137,30 @@ Giả sử cho góc xoay theta = 45 độ:
 - Giả sử phép cộng vô hướng vào một ma trận, mỗi ma trận trong ảnh sẽ được cộng thêm 20 đơn vị:  
 <img width="169" height="21" alt="image" src="https://github.com/user-attachments/assets/57a2d44b-6010-42c8-925c-f0e3ab26be60" />
 
+--> Kết quả:  
+<img width="432" height="420" alt="image" src="https://github.com/user-attachments/assets/fcd79081-54ef-4a7a-b2b6-93fdb884d733" />  
+
+- Giả sử nhân mỗi ma trận trong ảnh thêm 10 đơn vị:
+<img width="168" height="19" alt="image" src="https://github.com/user-attachments/assets/3c3ff409-4ea0-496b-9f55-855f09e6c73e" />
+
+--> Kết quả:  
+<img width="431" height="420" alt="image" src="https://github.com/user-attachments/assets/a901f6f8-e499-41c2-914f-3b3e7687264d" />  
+
+- Sử dụng nhiễu:
+``` python
+Noise = np.random.normal(0, 20, (rows, cols, 3)).astype(np.uint8)
+```
+<img width="195" height="29" alt="image" src="https://github.com/user-attachments/assets/04bd3061-18a4-470d-9862-f8c13a4fdabd" />  
+
+--> Kết quả:  
+<img width="431" height="420" alt="image" src="https://github.com/user-attachments/assets/f2863c04-f88c-49eb-abb2-f499c9bf9d8d" />
+
+
+
+
+
+
+
 
 
 
