@@ -20,6 +20,8 @@ Bài lab này giúp chúng ta tìm hiểu về 2 kiến thức chính:
 Cho vào ảnh gốc có kích thước cụ thể như ví dụ sau:  
 <img width="432" height="419" alt="image" src="https://github.com/user-attachments/assets/b8dbd764-1b50-4c3d-9e75-ac59231535ac" />  
 
+#### Phóng to hoặc thu nhỏ ảnh  
+
 - Giả sử tăng chiều rộng của ảnh lên 2 lần:  
 <img width="162" height="21" alt="image" src="https://github.com/user-attachments/assets/f41c95dd-a73f-4cbf-8b97-64c395d2b6f1" />
 
@@ -48,6 +50,10 @@ Cho vào ảnh gốc có kích thước cụ thể như ví dụ sau:
 <img width="82" height="21" alt="image" src="https://github.com/user-attachments/assets/48f46a2e-6a20-4516-a543-ccb19328c2b5" />
 
 --> <img width="433" height="419" alt="image" src="https://github.com/user-attachments/assets/d8af4af1-c9e8-4e4a-888e-f22a194bfc29" />  
+
+### 2. Mathematical Operations  
+#### Array Operations  
+
 
 
 
