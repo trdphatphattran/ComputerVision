@@ -53,6 +53,32 @@ Cho vào ảnh gốc có kích thước cụ thể như ví dụ sau:
 
 ### 2. Mathematical Operations  
 #### Array Operations  
+- Giả sử phép cộng vô hướng vào một ma trận, mỗi ma trận trong ảnh sẽ được cộng thêm 20 đơn vị:
+<img width="169" height="21" alt="image" src="https://github.com/user-attachments/assets/57a2d44b-6010-42c8-925c-f0e3ab26be60" />
+
+--> Kết quả:  
+<img width="432" height="421" alt="image" src="https://github.com/user-attachments/assets/6cb27daa-358e-4808-ade8-6033cc245985" />  
+
+- Giả sử nhân mỗi ma trận trong ảnh thêm 10 đơn vị:
+<img width="168" height="19" alt="image" src="https://github.com/user-attachments/assets/3c3ff409-4ea0-496b-9f55-855f09e6c73e" />
+
+--> Kết quả:  
+<img width="431" height="420" alt="image" src="https://github.com/user-attachments/assets/a901f6f8-e499-41c2-914f-3b3e7687264d" />  
+
+- Giả sử chúng ta có thêm độ nhiễu vào ảnh:
+<img width="501" height="23" alt="image" src="https://github.com/user-attachments/assets/94f7ed78-f8f0-48ca-8e1e-f3e5347e698b" />
+
+<img width="194" height="20" alt="image" src="https://github.com/user-attachments/assets/49413c38-86c0-4731-89ac-bc3278d235dd" />  
+
+--> Kết quả:  
+<img width="433" height="420" alt="image" src="https://github.com/user-attachments/assets/2a51490e-9867-4a92-992e-b57d2719f6dc" />
+
+
+
+
+
+
+
 
 
 
