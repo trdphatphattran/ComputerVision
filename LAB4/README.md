@@ -42,7 +42,11 @@ Cho vào ảnh gốc có kích thước cụ thể như ví dụ sau:
 <img width="177" height="42" alt="image" src="https://github.com/user-attachments/assets/a328c454-6d94-4cb1-99a3-1008a1069a47" />  
 
 --> Kết quả:  
+<img width="431" height="418" alt="image" src="https://github.com/user-attachments/assets/b78c0277-d390-43c1-8cf5-1cf27ee6f222" />  
 
+
+
+ 
 
 
 
