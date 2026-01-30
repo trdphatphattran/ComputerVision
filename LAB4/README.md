@@ -254,6 +254,38 @@ ehist = cv2.equalizeHist(gray_blur)
 --> Kết quả:  
 <img width="553" height="148" alt="image" src="https://github.com/user-attachments/assets/d9512435-f018-41a4-b144-1967c30e9460" />  
 
+### Câu 7: Bài tập trên lớp lý thuyết: FILTER bằng các phép toán số học và logic Given two images as follow (with different sizes: 193x157 and 194x160)   
+#### a. Crop two images to size 190x155  
+Cách làm:  
+<img width="175" height="38" alt="image" src="https://github.com/user-attachments/assets/e0748f2b-7f57-4b18-be47-8daf172e619e" />  
+
+--> Kết quả:  
+<img width="534" height="416" alt="image" src="https://github.com/user-attachments/assets/ec4c200d-8197-44b3-bbd5-3fe7e2ae1f90" />  
+
+#### b. Transform images to negative ones.  
+Cách làm:  
+<img width="387" height="25" alt="image" src="https://github.com/user-attachments/assets/f006fae6-b294-414e-af3b-1621832405c2" />  
+
+--> Kết quả:  
+<img width="510" height="418" alt="image" src="https://github.com/user-attachments/assets/792adf97-9eb4-4df8-a832-460230ed3e04" />  
+
+#### c. Process to have an image which has only the “ball” Nếu vẫn còn xuất hiện các vạch trắng, cách khắc phục như thế nào?  
+Cách làm:  
+<img width="378" height="25" alt="image" src="https://github.com/user-attachments/assets/7f5e1e25-1513-4b87-8e67-f6e16945e9b5" />  
+
+--> Kết quả:  
+<img width="510" height="418" alt="image" src="https://github.com/user-attachments/assets/defaec9c-fac3-4731-b2c4-51732143a69f" />  
+
+## Bài tập thêm  
+
+
+
+
+
+
+
+
+
 
 
 
