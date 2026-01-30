@@ -171,6 +171,23 @@ Noise = np.random.normal(0, 20, (rows, cols, 3)).astype(np.uint8)
 
 Đây là dòng thực hiện phép nhân ma trận giữa ma trận đường chéo S và ma trận V.  Kết quả B là một ma trận trung gian đã đưa vào các trọng số từ S vào V.  
 
+## HƯỚNG DẪN  
+### 1. Cài đặt thư viện quan trọng  
+pip install numpy  
+pip install pandas  
+pip install folium  
+### 2. Chạy notebook  
+- Mở Jupyter Notebook trên VSCode.
+- Code từng bài và chạy để xem kết quả.
+- Nếu xảy ra lỗi như code sai, không có ảnh, chưa tải thư viện -> Không hiển thị kết quả.
+
+## TÀI LIỆU THAM KHẢO  
+[1]  Images were taken from: https://homepages.cae.wisc.edu/~ece533/images/  
+[2]  <a href='https://pillow.readthedocs.io/en/stable/index.html'>Pillow Docs</a>  
+[3]  <a href='https://opencv.org/'>Open CV</a>  
+[4] Gonzalez, Rafael C., and Richard E. Woods. "Digital image processing." (2017).  
+[5 ] Jian, Wushuai, Xueyan Sun, and Shuqian Luo. "Computer-aided diagnosis of breast microcalcifications based on dual-tree complex wavelet transform." Biomedical engineering online 11.1 (2012): 1-12.  
+
 
 
 
