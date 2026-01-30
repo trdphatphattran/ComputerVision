@@ -95,7 +95,8 @@ Noise = np.random.normal(0, 20, (height, width, 3)).astype(np.uint8)
 #### Scaling  
 Có 2 kỹ thuật thường dùng là:  
 - INTER_NEAREST (Nội suy lân cận gần):
-- -
+  - Máy sẽ lấy đúng giá trị pixel nằm gần với vị trí mới nhất
+  - 
 
 
 
