@@ -153,7 +153,24 @@ Noise = np.random.normal(0, 20, (rows, cols, 3)).astype(np.uint8)
 <img width="195" height="29" alt="image" src="https://github.com/user-attachments/assets/04bd3061-18a4-470d-9862-f8c13a4fdabd" />  
 
 --> Kết quả:  
-<img width="431" height="420" alt="image" src="https://github.com/user-attachments/assets/f2863c04-f88c-49eb-abb2-f499c9bf9d8d" />
+<img width="431" height="420" alt="image" src="https://github.com/user-attachments/assets/f2863c04-f88c-49eb-abb2-f499c9bf9d8d" />  
+
+#### Matrix Operations  
+<img width="391" height="22" alt="image" src="https://github.com/user-attachments/assets/56bc5df1-096c-4724-989e-81b4acda0ead" />  
+
+Đây là lệnh thực hiện phép Phân tách giá trị đơn lẻ (Singular Value Decomposition - SVD):  
+- U: Ma trận trực giao (cột là các vector suy biến trái).  
+- s: Một vector chứa các giá trị đơn lẻ (singular values) sắp xếp giảm dần. Chúng đại diện cho "tầm quan trọng" của các thành phần trong ảnh.  
+- V: Ma trận trực giao (hàng là các vector suy biến phải).
+
+<img width="839" height="421" alt="image" src="https://github.com/user-attachments/assets/05d21f55-6a26-4de3-aeee-36bfc8151f93" />  
+
+--  
+
+<img width="97" height="19" alt="image" src="https://github.com/user-attachments/assets/ba480d50-434c-42c1-ade9-7b5faa40edda" />  
+
+Đây là dòng thực hiện phép nhân ma trận giữa ma trận đường chéo S và ma trận V.  Kết quả B là một ma trận trung gian đã đưa vào các trọng số từ S vào V.  
+
 
 
 
