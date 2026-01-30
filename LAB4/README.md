@@ -72,7 +72,10 @@ Noise = np.random.normal(0, 20, (height, width, 3)).astype(np.uint8)
 <img width="194" height="20" alt="image" src="https://github.com/user-attachments/assets/49413c38-86c0-4731-89ac-bc3278d235dd" />  
 
 --> Kết quả:  
-<img width="433" height="420" alt="image" src="https://github.com/user-attachments/assets/2a51490e-9867-4a92-992e-b57d2719f6dc" />
+<img width="433" height="420" alt="image" src="https://github.com/user-attachments/assets/2a51490e-9867-4a92-992e-b57d2719f6dc" />  
+
+
+
 
 
 
