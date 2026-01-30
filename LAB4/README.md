@@ -74,6 +74,18 @@ Noise = np.random.normal(0, 20, (height, width, 3)).astype(np.uint8)
 --> Kết quả:  
 <img width="433" height="420" alt="image" src="https://github.com/user-attachments/assets/2a51490e-9867-4a92-992e-b57d2719f6dc" />  
 
+#### Matrix Operations  
+<img width="391" height="22" alt="image" src="https://github.com/user-attachments/assets/56bc5df1-096c-4724-989e-81b4acda0ead" />  
+
+Đây là lệnh thực hiện phép Phân tách giá trị đơn lẻ (Singular Value Decomposition - SVD):  
+- U: Ma trận trực giao (cột là các vector suy biến trái).  
+- s: Một vector chứa các giá trị đơn lẻ (singular values) sắp xếp giảm dần. Chúng đại diện cho "tầm quan trọng" của các thành phần trong ảnh.  
+- V: Ma trận trực giao (hàng là các vector suy biến phải).
+
+
+
+
+
 
 
 
