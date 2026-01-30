@@ -176,6 +176,8 @@ Noise = np.random.normal(0, 20, (rows, cols, 3)).astype(np.uint8)
 pip install numpy  
 pip install pandas  
 pip install folium  
+pip install opencv-python.  
+pip install Pillow.  
 ### 2. Chạy notebook  
 - Mở Jupyter Notebook trên VSCode.
 - Code từng bài và chạy để xem kết quả.
