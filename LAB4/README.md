@@ -1,4 +1,4 @@
-# LAB 4: Geometric Operations and Other Mathematical Tools  
+<img width="468" height="42" alt="image" src="https://github.com/user-attachments/assets/39491e11-ca8f-47ea-b660-609dc78b8cbf" /># LAB 4: Geometric Operations and Other Mathematical Tools  
 ## Thông tin  
 Sinh viên: Trần Đại Phát  
 MSSV: 2374802010379  
@@ -170,6 +170,23 @@ Noise = np.random.normal(0, 20, (rows, cols, 3)).astype(np.uint8)
 <img width="97" height="19" alt="image" src="https://github.com/user-attachments/assets/ba480d50-434c-42c1-ade9-7b5faa40edda" />  
 
 Đây là dòng thực hiện phép nhân ma trận giữa ma trận đường chéo S và ma trận V.  Kết quả B là một ma trận trung gian đã đưa vào các trọng số từ S vào V.  
+
+## Phần 3: Thực hành Image Filter  
+- Cho ảnh gốc:
+<img width="341" height="420" alt="image" src="https://github.com/user-attachments/assets/6c157b3a-d86c-4080-bce5-fe70886b0dd7" />  
+
+### Câu 1: Sử dụng boxFilter: cv2.blur() hoặc cv2.boxFilter() để làm mờ ảnh (sử dụng nhiều thông số filter khác nhau), biểu diễn ảnh gốc và ảnh làm mờ cùng nhau để kiểm chứng.  
+Cách làm:  
+<img width="216" height="22" alt="image" src="https://github.com/user-attachments/assets/7d4bb4a7-8505-4402-aa59-e2535177171b" />  
+
+--> Kết quả:  
+<img width="343" height="420" alt="image" src="https://github.com/user-attachments/assets/d1e53497-9186-4ed3-b172-f064d43522fe" />  
+
+### Câu 2: 
+
+
+
+
 
 ## HƯỚNG DẪN  
 ### 1. Cài đặt thư viện quan trọng  
