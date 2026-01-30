@@ -277,30 +277,55 @@ Cách làm:
 <img width="510" height="418" alt="image" src="https://github.com/user-attachments/assets/defaec9c-fac3-4731-b2c4-51732143a69f" />  
 
 ## Bài tập thêm  
+- Sử dụng lại ảnh cat.jpg
+<img width="343" height="418" alt="image" src="https://github.com/user-attachments/assets/bcbc4c02-db9f-487b-b824-63234596001e" />  
 
+### Câu 1: ## 1. Sử dụng Backward, forward, central gradient để lọc ảnh.  
+Cách làm:  
+<img width="465" height="203" alt="image" src="https://github.com/user-attachments/assets/9893c175-124a-4ba5-9def-d1074ad31e3d" />  
 
+--> Kết quả:  
+<img width="780" height="683" alt="image" src="https://github.com/user-attachments/assets/c4675833-628f-4cc3-9fa2-783b2ce5f7fb" />  
 
+### Câu 2: Sử dụng Finite difference filter để lọc ảnh nhiễu.  
+Cách làm:  
+<img width="409" height="82" alt="image" src="https://github.com/user-attachments/assets/dde182c0-2202-4a25-909b-c5e39623719c" />  
 
+--> Kết quả:  
+<img width="467" height="236" alt="image" src="https://github.com/user-attachments/assets/49f055a6-0a1d-46fe-8ee6-5c3b236c7abc" />  
 
+### Câu 3: Sử dụng Gaussian filter để lọc ảnh.  
+Cách làm: Sử dụng Gaussian 15x15.  
+<img width="357" height="23" alt="image" src="https://github.com/user-attachments/assets/491a5a9b-d67f-4cc1-9170-a0fb0b8ac480" />  
 
+--> Kết quả:  
+<img width="462" height="234" alt="image" src="https://github.com/user-attachments/assets/6c7e23be-1ab8-447b-aa53-8862abc98136" />  
 
+### Câu 4: Sử dụng Sobel detector để xác định biên của ảnh.  
+Cách làm:  
+<img width="424" height="62" alt="image" src="https://github.com/user-attachments/assets/a758058e-847a-4e68-b79f-488d1f52dfe8" />  
 
+--> Kết quả:  
+<img width="462" height="233" alt="image" src="https://github.com/user-attachments/assets/31546f57-1b76-4b25-ab9c-f1871c5b555f" />  
 
+### Câu 5: Sử dụng Canny edge detector để xác định các cạnh góc ảnh.  
+Cách làm: Cho ngưỡng thấp là 50 và ngưỡng cao là 150.  
+<img width="330" height="39" alt="image" src="https://github.com/user-attachments/assets/434ac0bc-ebd4-4652-94b9-b3365a5eb61c" />  
 
+--> Kết quả:  
+<img width="487" height="234" alt="image" src="https://github.com/user-attachments/assets/b97530fb-305f-4d00-933f-6d6ff8e31259" />  
 
+### Câu 6: Sử dụng Hough transform để xác định các đường thẳng trong ảnh.  
+Cách làm:  
+- 1 (rho): Độ phân giải khoảng cách của tham số trong không gian Hough (tính bằng pixel).  
+- np.pi/180: Độ phân giải góc của tham số trong không gian Hough.  
+- threshold = 100: Số lần giao cắt tối thiểu trong không gian Hough để là một đường thẳng.
+- minLineLength = 50: Độ dài tối thiểu của một đoạn thẳng.
+- maxLineGap = 10: Khoảng cách tối đa giữa các đoạn thẳng để có thể nối chúng thành một đường duy nhất.  
+<img width="677" height="42" alt="image" src="https://github.com/user-attachments/assets/3a54c072-0fc5-4285-93a6-52bbcb754847" />  
 
-
-
-
-
-
-
-
-
-
-
-
-
+--> Kết quả:  
+<img width="470" height="234" alt="image" src="https://github.com/user-attachments/assets/bbed6032-1bc2-4181-9e73-f0d586cac746" />  
 
 ## HƯỚNG DẪN  
 ### 1. Cài đặt thư viện quan trọng  
