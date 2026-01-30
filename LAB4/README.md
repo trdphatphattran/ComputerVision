@@ -101,6 +101,48 @@ Có 2 kỹ thuật thường dùng là:
 --> Kết quả:  
 <img width="535" height="292" alt="image" src="https://github.com/user-attachments/assets/18d75562-7b47-418a-afea-4228ba1f7891" />  
 
+- INTER_CUBIC (Nội suy khối):
+  - Máy tính sử dụng giá trị của nhiều pixel xung quanh (thường là một lưới 4x4 gồm 16 pixel để tính toán).
+<img width="568" height="17" alt="image" src="https://github.com/user-attachments/assets/c91d9ab8-1586-4213-8aea-6a7131e156c9" />
+
+--> Kết quả:  
+<img width="584" height="343" alt="image" src="https://github.com/user-attachments/assets/30decc04-616e-4de5-8874-45993c9424bb" />  
+
+#### Translation  
+<img width="375" height="24" alt="image" src="https://github.com/user-attachments/assets/e3238a25-ba86-420a-a8c8-d8a642b28f00" />  
+
+Đây là hàm được dùng để thực hiện phép biến đổi Afin cho phép dịch chuyển, xoay, ... ảnh.  
+
+Giả sử cho đầu vào tx = 100, ty = 0, ta có ảnh được dịch chuyển theo công thức sau:  
+<img width="443" height="22" alt="image" src="https://github.com/user-attachments/assets/a5dd15c7-1837-407a-9a61-79ae96172e27" />  
+
+--> Kết quả:  
+<img width="506" height="419" alt="image" src="https://github.com/user-attachments/assets/49ffafca-2926-458f-a38b-4131ae2e6954" />  
+
+#### Rotation  
+Chúng ta có thể sử dụng hàm cv2.getRotationMatrix2D:  
+- center (tâm xoay): Là điểm mốc đẻ thực hiện phép xoay ảnh trên ảnh gốc.
+- angle (góc xoay): Độ xoay của ảnh.
+- scale (tỷ lệ): Co dãn ảnh.
+
+Giả sử cho góc xoay theta = 45 độ:  
+
+<img width="645" height="24" alt="image" src="https://github.com/user-attachments/assets/db36b135-64b3-40d6-92e8-e2339ea660f4" />  
+
+--> Kết quả:  
+<img width="432" height="420" alt="image" src="https://github.com/user-attachments/assets/e3b45280-abf4-4ccb-8ced-7b06a75dc2f0" />  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
