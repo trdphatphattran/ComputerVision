@@ -1,4 +1,4 @@
-<img width="468" height="42" alt="image" src="https://github.com/user-attachments/assets/39491e11-ca8f-47ea-b660-609dc78b8cbf" /># LAB 4: Geometric Operations and Other Mathematical Tools  
+# LAB 4: Geometric Operations and Other Mathematical Tools  
 ## Thông tin  
 Sinh viên: Trần Đại Phát  
 MSSV: 2374802010379  
