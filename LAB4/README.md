@@ -36,13 +36,13 @@ Cho vào ảnh gốc có kích thước cụ thể như ví dụ sau:
 <img width="168" height="38" alt="image" src="https://github.com/user-attachments/assets/b73bc3cb-ef4a-4b9b-878f-d836b71c1009" />
 
 --> Kết quả:  
-<img width="178" height="42" alt="image" src="https://github.com/user-attachments/assets/136c5cd5-3c5c-4abf-b9f5-caebd6fab584" />  
+<img width="445" height="421" alt="image" src="https://github.com/user-attachments/assets/4ce8bc34-b52a-4dd8-9a9b-4ad09eea96f3" />  
 
 - Giả sử giảm chiều dài và chiều rộng xuống 2 lần:  
 <img width="177" height="42" alt="image" src="https://github.com/user-attachments/assets/a328c454-6d94-4cb1-99a3-1008a1069a47" />  
 
 --> Kết quả:  
-![Uploading image.png…]()  
+
 
 
 
