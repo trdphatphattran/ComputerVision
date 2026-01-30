@@ -207,6 +207,57 @@ img_pepper01a = cv2.blur(img_pepper01, (110,110))
 img_pepper01b = cv2.GaussianBlur(img_pepper01, (11,11), 0)
 img_pepper01c = cv2.medianBlur(img_pepper01, 15, 0)
 ```
+--> Kết quả:  
+<img width="495" height="421" alt="image" src="https://github.com/user-attachments/assets/6a1d4380-354c-4d74-801b-52ec989f563b" />  
+
+pepper_noise02.png  
+<img width="425" height="284" alt="image" src="https://github.com/user-attachments/assets/a4309628-b9a0-475f-b913-7334d25f910b" />  
+
+Cách làm:  
+```python
+img_pepper02 = cv2.imread('pepper_noise02.png')
+img_pepper02a = cv2.blur(img_pepper02, (110,110))
+img_pepper02b = cv2.GaussianBlur(img_pepper02, (11,11), 0)
+img_pepper02c = cv2.medianBlur(img_pepper02, 15, 0)
+```
+
+--> Kết quả:  
+<img width="553" height="399" alt="image" src="https://github.com/user-attachments/assets/0b407aef-8f30-4f9a-af7f-2de5c0b11480" />  
+
+### Câu 5: Có nhận xét gì về các kích thước filter.  
+- Filter phải ma trận hoặc kích thước lẻ 3x3, 5x5, 11x11, ...  
+- Kích thước phải nhỏ và vừa tránh làm quá mờ ảnh.
+
+### Câu 6: Thực hành với Cân bằng sáng - equalizeHist, để cân bằng sáng, trước hết ta chuyển ảnh trắng đen (nếu có) sang ảnh màu.  
+pepper_noise01.png  
+<img width="255" height="253" alt="image" src="https://github.com/user-attachments/assets/02e29585-4987-4fd5-849e-6a02340c4727" />  
+
+Cách làm:  
+```python
+blur = cv2.medianBlur(img, 5)
+gray_blur = cv2.cvtColor(blur, cv2.COLOR_BGR2GRAY)
+ehist = cv2.equalizeHist(gray_blur)
+```
+
+--> Kết quả:  
+<img width="553" height="195" alt="image" src="https://github.com/user-attachments/assets/ed2296e3-6c87-4c4a-8323-a2d5d16b070c" />  
+
+pepper_noise02.png  
+<img width="425" height="284" alt="image" src="https://github.com/user-attachments/assets/a4309628-b9a0-475f-b913-7334d25f910b" />  
+
+Cách làm:  
+```python
+blur = cv2.medianBlur(img, 5)
+gray_blur = cv2.cvtColor(blur, cv2.COLOR_BGR2GRAY)
+ehist = cv2.equalizeHist(gray_blur)
+```
+--> Kết quả:  
+<img width="553" height="148" alt="image" src="https://github.com/user-attachments/assets/d9512435-f018-41a4-b144-1967c30e9460" />  
+
+
+
+
+
 
 
 
