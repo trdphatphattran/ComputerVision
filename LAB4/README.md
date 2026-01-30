@@ -182,7 +182,28 @@ Cách làm:
 --> Kết quả:  
 <img width="343" height="420" alt="image" src="https://github.com/user-attachments/assets/d1e53497-9186-4ed3-b172-f064d43522fe" />  
 
-### Câu 2: 
+### Câu 2: Sử dụng Gaussian Filter # Lưu ý: kích thước bộ lọc là số lẻ.  
+Cách làm:  
+<img width="300" height="24" alt="image" src="https://github.com/user-attachments/assets/592affab-c377-4496-a26d-974bcd9a8f88" />  
+
+--> Kết quả:  
+<img width="340" height="419" alt="image" src="https://github.com/user-attachments/assets/9107b5b6-bce6-4b45-9fdf-71b0f29a72e1" />  
+
+### Câu 3: Sử dụng Median Filter  
+Cách làm:  
+<img width="249" height="23" alt="image" src="https://github.com/user-attachments/assets/b7a24279-f3ca-4c3a-b910-e0c467237437" />  
+
+--> Kết quả:  
+<img width="341" height="419" alt="image" src="https://github.com/user-attachments/assets/b2a4895e-e7d7-4822-ab46-a54fdf87303c" />  
+
+### Câu 4: Kiểm tra lại các bộ lọc trên với hai hình ảnh pepper noise dưới đây:  
+![image-2.png](attachment:image-2.png)  
+
+
+
+
+
+
 
 
 
