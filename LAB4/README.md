@@ -44,6 +44,15 @@ Cho vào ảnh gốc có kích thước cụ thể như ví dụ sau:
 --> Kết quả:  
 <img width="431" height="418" alt="image" src="https://github.com/user-attachments/assets/b78c0277-d390-43c1-8cf5-1cf27ee6f222" />  
 
+- Giả sử xoay ảnh sang 45 độ:
+<img width="82" height="21" alt="image" src="https://github.com/user-attachments/assets/48f46a2e-6a20-4516-a543-ccb19328c2b5" />
+
+--> <img width="433" height="419" alt="image" src="https://github.com/user-attachments/assets/d8af4af1-c9e8-4e4a-888e-f22a194bfc29" />  
+
+
+
+
+
 
 
  
