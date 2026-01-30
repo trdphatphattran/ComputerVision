@@ -197,7 +197,17 @@ Cách làm:
 <img width="341" height="419" alt="image" src="https://github.com/user-attachments/assets/b2a4895e-e7d7-4822-ab46-a54fdf87303c" />  
 
 ### Câu 4: Kiểm tra lại các bộ lọc trên với hai hình ảnh pepper noise dưới đây:  
-![image-2.png](attachment:image-2.png)  
+pepper_noise01.png  
+<img width="255" height="253" alt="image" src="https://github.com/user-attachments/assets/02e29585-4987-4fd5-849e-6a02340c4727" />  
+
+Cách làm:  
+```python
+img_pepper01 = cv2.imread('pepper_noise01.png')
+img_pepper01a = cv2.blur(img_pepper01, (110,110))
+img_pepper01b = cv2.GaussianBlur(img_pepper01, (11,11), 0)
+img_pepper01c = cv2.medianBlur(img_pepper01, 15, 0)
+```
+
 
 
 
