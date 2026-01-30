@@ -90,6 +90,13 @@ Noise = np.random.normal(0, 20, (height, width, 3)).astype(np.uint8)
 
 Đây là dòng thực hiện phép nhân ma trận giữa ma trận đường chéo S và ma trận V.  Kết quả B là một ma trận trung gian đã đưa vào các trọng số từ S vào V.  
 
+## Phần 2: Với OpenCV  
+### 1. Geometric Operations:  
+#### Scaling  
+Có 2 kỹ thuật thường dùng là:  
+- INTER_NEAREST (Nội suy lân cận gần):
+ - 
+
 
 
 
