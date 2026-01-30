@@ -26,6 +26,31 @@ Cho vào ảnh gốc có kích thước cụ thể như ví dụ sau:
 --> Kết quả:  
 <img width="559" height="298" alt="image" src="https://github.com/user-attachments/assets/1f2cbf4a-4422-43cf-a35c-821ed3512a98" />  
 
+- Giả sử tăng chiều cao lên 2 lần:
+<img width="165" height="19" alt="image" src="https://github.com/user-attachments/assets/8bb025c3-8ab3-4498-aede-235fa64e96b7" />
+
+--> Kết quả:  
+<img width="250" height="419" alt="image" src="https://github.com/user-attachments/assets/e8ad22df-415f-4ae7-ac94-77582c960e39" />  
+
+- Giả sử tăng chiều dài và chiều rộng lên 2 lần:
+<img width="168" height="38" alt="image" src="https://github.com/user-attachments/assets/b73bc3cb-ef4a-4b9b-878f-d836b71c1009" />
+
+--> Kết quả:  
+<img width="178" height="42" alt="image" src="https://github.com/user-attachments/assets/136c5cd5-3c5c-4abf-b9f5-caebd6fab584" />  
+
+- Giả sử giảm chiều dài và chiều rộng xuống 2 lần:
+![Uploading image.png…]()  
+
+--> Kết quả:  
+![Uploading image.png…]()  
+
+
+
+
+
+
+
+
 
 
 
