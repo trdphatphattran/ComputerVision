@@ -132,6 +132,14 @@ Giả sử cho góc xoay theta = 45 độ:
 --> Kết quả:  
 <img width="432" height="420" alt="image" src="https://github.com/user-attachments/assets/e3b45280-abf4-4ccb-8ced-7b06a75dc2f0" />  
 
+### 2. Mathematical Operations  
+#### Array Operations  
+- Giả sử phép cộng vô hướng vào một ma trận, mỗi ma trận trong ảnh sẽ được cộng thêm 20 đơn vị:  
+<img width="169" height="21" alt="image" src="https://github.com/user-attachments/assets/57a2d44b-6010-42c8-925c-f0e3ab26be60" />
+
+
+
+
 
 
 
