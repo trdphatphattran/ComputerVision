@@ -82,6 +82,12 @@ Noise = np.random.normal(0, 20, (height, width, 3)).astype(np.uint8)
 - s: Một vector chứa các giá trị đơn lẻ (singular values) sắp xếp giảm dần. Chúng đại diện cho "tầm quan trọng" của các thành phần trong ảnh.  
 - V: Ma trận trực giao (hàng là các vector suy biến phải).
 
+<img width="839" height="421" alt="image" src="https://github.com/user-attachments/assets/05d21f55-6a26-4de3-aeee-36bfc8151f93" />  
+
+<img width="97" height="19" alt="image" src="https://github.com/user-attachments/assets/ba480d50-434c-42c1-ade9-7b5faa40edda" />
+
+
+
 
 
 
