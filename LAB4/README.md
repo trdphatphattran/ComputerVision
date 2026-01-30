@@ -66,7 +66,8 @@ Cho vào ảnh gốc có kích thước cụ thể như ví dụ sau:
 <img width="431" height="420" alt="image" src="https://github.com/user-attachments/assets/a901f6f8-e499-41c2-914f-3b3e7687264d" />  
 
 - Giả sử chúng ta có thêm độ nhiễu vào ảnh:
-<img width="501" height="23" alt="image" src="https://github.com/user-attachments/assets/94f7ed78-f8f0-48ca-8e1e-f3e5347e698b" />
+
+<img width="501" height="23" alt="image" src="https://github.com/user-attachments/assets/94f7ed78-f8f0-48ca-8e1e-f3e5347e698b" />  
 
 <img width="194" height="20" alt="image" src="https://github.com/user-attachments/assets/49413c38-86c0-4731-89ac-bc3278d235dd" />  
 
