@@ -85,7 +85,9 @@ img_gray = img_gray.filter(ImageFilter.FIND_EDGES)
 ### 3. Median  
 Median filter là phương pháp lọc ảnh bằng cách lấy giá trị trung vị (median) của các pixel trong vùng kernel, sau đó thay thế giá trị pixel trung tâm bằng giá trị này. Phương pháp này thường được dùng để giảm nhiễu trong ảnh.  
 - Sử dụng thư viện ImageFilter.MedianFilter để giảm nhiễu trong ảnh.
-<img width="342" height="21" alt="image" src="https://github.com/user-attachments/assets/33e46720-ce30-4cbe-9ee8-75057d428e51" />
+```python
+image = image.filter(ImageFilter.MedianFilter)
+```
 
 --> Kết quả
 <img width="814" height="807" alt="image" src="https://github.com/user-attachments/assets/e47878f1-89d3-43ec-8df3-2475fce666b1" />  
@@ -94,34 +96,44 @@ Median filter là phương pháp lọc ảnh bằng cách lấy giá trị trung
 ### 1. Linear Filtering  
 #### Filtering noise  
 - Dùng hàm filter2D để lọc nhiễu
-<img width="499" height="22" alt="image" src="https://github.com/user-attachments/assets/9c5270ee-2905-4458-9bad-aea5e53c6cc3" />
+```python
+image_filtered = cv2.filter2D(src=noisy_image, ddepth=-1, kernel=kernel)
+```
 
 --> Kết quả  
 <img width="829" height="410" alt="image" src="https://github.com/user-attachments/assets/a963a080-88c2-46be-8f70-73335ee2de9d" />  
 
 #### Gaussian Blur  
 - Dùng hàm GaussianBlur để tiến hành lọc nhiễu với 2 độ lệch chuẩn là sigmaX và sigmaY  
-<img width="514" height="21" alt="image" src="https://github.com/user-attachments/assets/b15ee84b-0497-4658-ac00-eba1615a8031" />
+```python
+image_filtered = cv2.GaussianBlur(noisy_image,(5,5),sigmaX=4,sigmaY=4)
+```
 
 --> Kết quả  
 <img width="827" height="408" alt="image" src="https://github.com/user-attachments/assets/7e9a3cb8-83ca-4a05-b81a-f30d3b355e7e" />  
 
 #### Image sharpening  
 - Dùng hàm filter2D để làm sắc nét ảnh.
-<img width="321" height="19" alt="image" src="https://github.com/user-attachments/assets/2a18ea35-5ceb-4dd5-ba78-d5464b4a3c4a" />
+```python
+sharpened = cv2.filter2D(image, -1, kernel)
+```
 
 --> Kết quả  
 <img width="826" height="413" alt="image" src="https://github.com/user-attachments/assets/043101a5-2cb7-4153-aae8-be181af10868" />
 
 ### 2. Edges  
 - Dùng Sobel filter để phát hiện cạnh theo chiều ngang theo hướng X.
-<img width="501" height="19" alt="image" src="https://github.com/user-attachments/assets/bc24eb20-7474-45bb-ae34-9b53492b729d" />
+```python
+grad_x = cv2.Sobel(src=img_gray, ddepth=ddepth, dx=1, dy=0, ksize=3)
+```
 
 --> Kết quả  
 <img width="424" height="409" alt="image" src="https://github.com/user-attachments/assets/19b2500c-3e4e-43a7-92cd-7e68383b0647" />  
 
 - Dùng Sobel filter để phát hiện cạnh theo chiều dọc theo hướng Y.
-<img width="503" height="21" alt="image" src="https://github.com/user-attachments/assets/623b8647-ee27-4ce7-94e8-acfafb19e12c" />
+```python
+grad_y = cv2.Sobel(src=img_gray, ddepth=ddepth, dx=0, dy=1, ksize=3)
+```
 
 --> Kết quả  
 <img width="423" height="408" alt="image" src="https://github.com/user-attachments/assets/86788bd8-764f-4fba-b6bb-326e9f41d2bd" />  
