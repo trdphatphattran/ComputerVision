@@ -176,16 +176,14 @@ dst = cv2.dilate(dst, None)
 img[dst > 0.01 * dst.max()] = [0, 0, 255]
 ```
 
-
-
-
-
-
-
-
-
-
-
+### Band-pass filtering by Difference of Gaussians  
+- Phân tích tần số của ảnh trước và sau khi lọc bằng Difference of Gaussians (DoG).  
+```python
+filtered_image = difference_of_gaussians(wimage, 1, 12)
+```
+- Theo nguyên lý hoạt động:  DoG = Gaussian(sigma1) − Gaussian(sigma2).
+--> Kết quả
+<img width="673" height="676" alt="image" src="https://github.com/user-attachments/assets/891065fe-edcd-483c-b0f2-d934dde16bf8" />  
 
 ## HƯỚNG DẪN  
 ### 1. Cài đặt thư viện quan trọng  
