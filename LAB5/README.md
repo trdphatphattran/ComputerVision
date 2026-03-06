@@ -14,10 +14,14 @@ Filtering là kỹ thuật cải thiện chất lượng ảnh, ví dụ như lo
 #### Filtering noise  
 Import ImageFilter từ thư viện PIL.  
 - Tạo kernel để làm mượt ảnh
-<img width="198" height="20" alt="image" src="https://github.com/user-attachments/assets/13a41ee7-ad76-43b4-9173-9bf777833d24" />
+```python
+kernel = np.ones((5,5))/36
+```
 
 - Tạo bộ lọc kernel
-<img width="433" height="23" alt="image" src="https://github.com/user-attachments/assets/b88ad5c1-8a28-4f66-99bb-d520e19c0895" />
+```python
+kernel_filter = ImageFilter.Kernel((5,5), kernel.flatten())
+```
 
 - Áp dụng bộ lọc lên ảnh nhiễu để giảm noise
 <img width="367" height="25" alt="image" src="https://github.com/user-attachments/assets/22fb35b8-7caa-4bd8-8c0a-30b8cc9068b3" />
