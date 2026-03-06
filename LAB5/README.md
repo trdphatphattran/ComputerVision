@@ -28,7 +28,9 @@ Import ImageFilter từ thư viện PIL.
 #### Gaussian Blur  
 Gaussian Blur được thực hiện bằng cách sử dụng hàm filter() trên ảnh cùng với bộ lọc có sẵn ImageFilter.GaussianBlur. Bộ lọc này làm mờ ảnh bằng cách làm mượt các pixel lân cận để giảm nhiễu và chi tiết nhỏ.  
 
-![Uploading image.png…]()  
+`python`
+
+--> Kết quả
 
 
 #### Image sharpening  
