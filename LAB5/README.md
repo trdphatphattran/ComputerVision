@@ -31,11 +31,30 @@ Gaussian Blur được thực hiện bằng cách sử dụng hàm filter() trê
 ```python
 image_filtered = noisy_image.filter(ImageFilter.GaussianBlur)  
 ```
-
---> Kết quả
-
+--> Kết quả  
+<img width="831" height="410" alt="image" src="https://github.com/user-attachments/assets/1c7f0443-888c-403d-8251-56e59bb21d99" />  
 
 #### Image sharpening  
+Image Sharpening là kỹ thuật làm sắc nét ảnh bằng cách làm mượt ảnh và tính toán sự thay đổi giữa các pixel (đạo hàm). Quá trình này thường được thực hiện bằng cách áp dụng một kernel để làm nổi bật các chi tiết và cạnh trong ảnh.  
+```python
+kernel = np.array([[-1,-1,-1], 
+                   [-1, 9,-1],
+                   [-1,-1,-1]])
+kernel = ImageFilter.Kernel((3,3), kernel.flatten())
+```
+- Tạo sharpening kernel để làm nổi bật chi tiết và tạo bộ lọc từ kernel.
+
+- Áp dụng bộ lọc sharpening lên ảnh
+<img width="237" height="20" alt="image" src="https://github.com/user-attachments/assets/b2ff918a-0c75-49cd-a67f-a2172ca5479a" />
+
+--> Kết quả  
+<img width="831" height="413" alt="image" src="https://github.com/user-attachments/assets/0b333ef3-10b4-4aea-bf60-312a0ab7f559" />  
+
+Hoặc ta có thể sử dụng ImageFilter.SHARPEN  
+<img width="334" height="20" alt="image" src="https://github.com/user-attachments/assets/36f19fb5-c505-4589-9184-ba692bf5d0da" />  
+
+
+
 
 ### 2. Edges  
 
