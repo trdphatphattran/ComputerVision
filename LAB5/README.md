@@ -1,4 +1,4 @@
-<img width="411" height="21" alt="image" src="https://github.com/user-attachments/assets/c9aba3d2-cb95-4fba-992b-fa41abc91b6b" /># LAB 5: Spatial Operations in Image Processing  
+# LAB 5: Spatial Operations in Image Processing  
 ## Thông tin  
 Sinh viên: Trần Đại Phát  
 MSSV: 2374802010379  
