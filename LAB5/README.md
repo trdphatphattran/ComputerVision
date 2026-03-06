@@ -51,24 +51,32 @@ kernel = ImageFilter.Kernel((3,3), kernel.flatten())
 - Tạo sharpening kernel để làm nổi bật chi tiết và tạo bộ lọc từ kernel.
 
 - Áp dụng bộ lọc sharpening lên ảnh
-<img width="237" height="20" alt="image" src="https://github.com/user-attachments/assets/b2ff918a-0c75-49cd-a67f-a2172ca5479a" />
+```python
+sharpened = image.filter(kernel)
+```
 
 --> Kết quả  
 <img width="831" height="413" alt="image" src="https://github.com/user-attachments/assets/0b333ef3-10b4-4aea-bf60-312a0ab7f559" />  
 
 Hoặc ta có thể sử dụng ImageFilter.SHARPEN  
-<img width="334" height="20" alt="image" src="https://github.com/user-attachments/assets/36f19fb5-c505-4589-9184-ba692bf5d0da" />  
+```python
+sharpened = image.filter(ImageFilter.SHARPEN)
+```
 
 ### 2. Edges  
 Edges là những vị trí trong ảnh nơi cường độ pixel thay đổi mạnh. Gradient được dùng để đo tốc độ thay đổi này và có thể được xấp xỉ bằng phép convolution trên ảnh xám để phát hiện các cạnh trong ảnh.  
 - Sử dụng ImageFilter.EDGE_ENHANCE để làm nổi bật các cạnh trong ảnh xám.
-<img width="381" height="19" alt="image" src="https://github.com/user-attachments/assets/ad373fd1-229b-4975-b851-7ef2c28da505" />
+```python
+img_gray = img_gray.filter(ImageFilter.EDGE_ENHANCE)
+```
 
 --> Kết quả  
 <img width="431" height="416" alt="image" src="https://github.com/user-attachments/assets/6e972c0f-5610-46d8-bb9c-ef9ed6cc675b" />  
 
 - Sử dụng ImageFilter.FIND_EDGES để phát hiện các cạnh trong ảnh.  
-<img width="368" height="21" alt="image" src="https://github.com/user-attachments/assets/f9a6bca5-7f8e-4240-8813-cf0a10e94591" />  
+```python
+img_gray = img_gray.filter(ImageFilter.FIND_EDGES)
+```
 
 --> Kết quả  
 <img width="817" height="806" alt="image" src="https://github.com/user-attachments/assets/547596d4-8938-46c1-a2f8-bb4d097dfabe" />  
