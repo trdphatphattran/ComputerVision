@@ -1,4 +1,4 @@
-# LAB 5: Spatial Operations in Image Processing  
+<img width="411" height="21" alt="image" src="https://github.com/user-attachments/assets/c9aba3d2-cb95-4fba-992b-fa41abc91b6b" /># LAB 5: Spatial Operations in Image Processing  
 ## Thông tin  
 Sinh viên: Trần Đại Phát  
 MSSV: 2374802010379  
@@ -135,6 +135,33 @@ Thresholding là phương pháp phân tách ảnh dựa trên giá trị cườn
 
 --> Kết quả  
 <img width="818" height="806" alt="image" src="https://github.com/user-attachments/assets/9f14a3df-1bce-436d-8637-db1832d01c76" />  
+
+## Bài tập thêm  
+### Feature detection and image matching  
+#### 1. Thực hành xử lý ảnh trong miền tần số  
+- Fast Fourier Transform (FFT) để phát hiện ảnh mờ.
+- Sử dụng dft trong thư viện cv2, sau đó đưa ảnh về dạng số phức.
+```python
+dft = cv2.dft(img_float32, flags=cv2.DFT_COMPLEX_OUTPUT)
+```
+- Đưa về thang log để giảm sự chênh lệch lớn giữa các giá trị biên độ trong phổ tần số, giúp hiển thị và quan sát các tần số rõ hơn.  
+```python
+magnitude_spectrum = 20 * np.log(cv2.magnitude(dft_shift[:, :, 0], dft_shift[:, :, 1]))
+```
+--> Kết quả  
+<img width="515" height="322" alt="image" src="https://github.com/user-attachments/assets/4953e68c-575d-4413-be67-f2f7f51c99d8" />  
+
+#### 3. Sử dụng FFT Magnitude algorithm để phát hiện ảnh mờ  
+<img width="449" height="77" alt="image" src="https://github.com/user-attachments/assets/60ee94b0-c2a6-46f9-a831-7906fb3f8808" />  
+
+--> Kết quả  
+![Uploading image.png…]()
+
+
+
+
+
+
 
 
 ## HƯỚNG DẪN  
