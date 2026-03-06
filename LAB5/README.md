@@ -12,8 +12,24 @@ Mục tiêu của bài này là tìm hiểu các phép toán không gian (spatia
 ### 1. Linear Filtering  
 Filtering là kỹ thuật cải thiện chất lượng ảnh, ví dụ như loại bỏ nhiễu hoặc làm sắc nét ảnh bị mờ. Phương pháp phổ biến để thực hiện filtering là convolution, sử dụng một kernel để nhân với vùng ảnh tương ứng rồi dịch chuyển trên toàn bộ ảnh. Các kernel khác nhau sẽ thực hiện những nhiệm vụ khác nhau và phương pháp này cũng được sử dụng rộng rãi trong các thuật toán AI.  
 #### Filtering noise  
+Import ImageFilter từ thư viện PIL.  
+- Tạo kernel để làm mượt ảnh
+<img width="198" height="20" alt="image" src="https://github.com/user-attachments/assets/13a41ee7-ad76-43b4-9173-9bf777833d24" />
+
+- Tạo bộ lọc kernel
+<img width="433" height="23" alt="image" src="https://github.com/user-attachments/assets/b88ad5c1-8a28-4f66-99bb-d520e19c0895" />
+
+- Áp dụng bộ lọc lên ảnh nhiễu để giảm noise
+<img width="367" height="25" alt="image" src="https://github.com/user-attachments/assets/22fb35b8-7caa-4bd8-8c0a-30b8cc9068b3" />
+
+--> Kết quả:  
+<img width="835" height="416" alt="image" src="https://github.com/user-attachments/assets/a3e6dbd6-0299-4fa9-8829-802a9e5fbd53" />  
 
 #### Gaussian Blur  
+Gaussian Blur được thực hiện bằng cách sử dụng hàm filter() trên ảnh cùng với bộ lọc có sẵn ImageFilter.GaussianBlur. Bộ lọc này làm mờ ảnh bằng cách làm mượt các pixel lân cận để giảm nhiễu và chi tiết nhỏ.  
+
+![Uploading image.png…]()  
+
 
 #### Image sharpening  
 
