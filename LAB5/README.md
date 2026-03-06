@@ -187,7 +187,12 @@ magnitude_spectrum = 20 * np.log(cv2.magnitude(dft_shift[:, :, 0], dft_shift[:, 
 <img width="515" height="322" alt="image" src="https://github.com/user-attachments/assets/4953e68c-575d-4413-be67-f2f7f51c99d8" />  
 
 #### 3. Sử dụng FFT Magnitude algorithm để phát hiện ảnh mờ  
-<img width="449" height="77" alt="image" src="https://github.com/user-attachments/assets/60ee94b0-c2a6-46f9-a831-7906fb3f8808" />  
+```python
+filterd_image = difference_of_gaussians(wimage, 1, 12)
+filterd_wimage = filterd_image * window('hann', image.shape)
+im_f_mag = fftshift(np.abs(fftn(wimage)))
+fim_f_mag = fftshift(np.abs(fftn(filterd_wimage)))
+```
 
 --> Kết quả  
 <img width="673" height="674" alt="image" src="https://github.com/user-attachments/assets/e54c0b75-2709-48b6-8448-45d0cae4a674" />  
