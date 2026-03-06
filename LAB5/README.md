@@ -155,7 +155,30 @@ magnitude_spectrum = 20 * np.log(cv2.magnitude(dft_shift[:, :, 0], dft_shift[:, 
 <img width="449" height="77" alt="image" src="https://github.com/user-attachments/assets/60ee94b0-c2a6-46f9-a831-7906fb3f8808" />  
 
 --> Kết quả  
-![Uploading image.png…]()
+<img width="673" height="674" alt="image" src="https://github.com/user-attachments/assets/e54c0b75-2709-48b6-8448-45d0cae4a674" />  
+
+### Thực hành Harris corner detection  
+- Dùng để phát hiện các góc trong ảnh.
+```python
+  dst = cv2.cornerHarris(gray, blockSize, ksize, k)
+```
+- Đánh dấu các góc phát hiện được bằng màu đỏ.
+```python
+  img[dst>threshold*dst.max()]=[0, 0, 255]
+```
+--> Kết quả  
+<img width="491" height="608" alt="image" src="https://github.com/user-attachments/assets/f31cb963-cadd-4f38-adac-39b8b6b73d6b" />  
+
+- Hoặc thử cách khác
+```python
+dst = cv2.cornerHarris(gray, 2, 3, 0.04)
+dst = cv2.dilate(dst, None)
+img[dst > 0.01 * dst.max()] = [0, 0, 255]
+```
+
+
+
+
 
 
 
