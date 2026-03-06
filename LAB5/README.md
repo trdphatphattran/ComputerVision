@@ -61,13 +61,20 @@ Edges là những vị trí trong ảnh nơi cường độ pixel thay đổi m�
 --> Kết quả  
 <img width="431" height="416" alt="image" src="https://github.com/user-attachments/assets/6e972c0f-5610-46d8-bb9c-ef9ed6cc675b" />  
 
-- Sử dụng ImageFilter.FIND_EDGES để phát hiện các cạnh trong ảnh.
-![Uploading image.png…]()
+- Sử dụng ImageFilter.FIND_EDGES để phát hiện các cạnh trong ảnh.  
+<img width="368" height="21" alt="image" src="https://github.com/user-attachments/assets/f9a6bca5-7f8e-4240-8813-cf0a10e94591" />  
 
 --> Kết quả  
-![Uploading image.png…]()  
+<img width="817" height="806" alt="image" src="https://github.com/user-attachments/assets/547596d4-8938-46c1-a2f8-bb4d097dfabe" />  
+
 
 ### 3. Median  
+Median filter là phương pháp lọc ảnh bằng cách lấy giá trị trung vị (median) của các pixel trong vùng kernel, sau đó thay thế giá trị pixel trung tâm bằng giá trị này. Phương pháp này thường được dùng để giảm nhiễu trong ảnh.  
+- Sử dụng thư viện ImageFilter.MedianFilter để giảm nhiễu trong ảnh.
+<img width="342" height="21" alt="image" src="https://github.com/user-attachments/assets/33e46720-ce30-4cbe-9ee8-75057d428e51" />
+
+- Kết quả
+![Uploading image.png…]()  
 
 ## Phần 2: Với OpenCV  
 ### 1. Linear Filtering  
