@@ -24,7 +24,9 @@ kernel_filter = ImageFilter.Kernel((5,5), kernel.flatten())
 ```
 
 - Áp dụng bộ lọc lên ảnh nhiễu để giảm noise
-<img width="367" height="25" alt="image" src="https://github.com/user-attachments/assets/22fb35b8-7caa-4bd8-8c0a-30b8cc9068b3" />
+```python
+image_filtered = noisy_image.filter(kernel_filter)
+```
 
 --> Kết quả:  
 <img width="835" height="416" alt="image" src="https://github.com/user-attachments/assets/a3e6dbd6-0299-4fa9-8829-802a9e5fbd53" />  
