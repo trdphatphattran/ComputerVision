@@ -112,9 +112,30 @@ Median filter là phương pháp lọc ảnh bằng cách lấy giá trị trung
 --> Kết quả  
 <img width="423" height="408" alt="image" src="https://github.com/user-attachments/assets/86788bd8-764f-4fba-b6bb-326e9f41d2bd" />  
 
+- Chuyển các giá trị gradient về khoảng 0–255 để hiển thị được trên ảnh.
+<img width="294" height="37" alt="image" src="https://github.com/user-attachments/assets/81128794-0e0d-4547-96ac-3dbaf5ba5bc1" />
+
+- Kết hợp gradient theo X và Y để tạo ảnh phát hiện cạnh.
+<img width="433" height="21" alt="image" src="https://github.com/user-attachments/assets/90d0a115-249c-4436-a42a-2eab11335a7d" />
+
+--> Kết quả  
+<img width="812" height="811" alt="image" src="https://github.com/user-attachments/assets/c5f02ff0-6a92-4a4b-ae79-1845ed6fb6a7" />  
+
 ### 3. Median  
+- Sử dụng hàm medianBlur để giảm nhiễu.
+<img width="299" height="20" alt="image" src="https://github.com/user-attachments/assets/88d5e9fe-4616-4a48-8914-77c10796d284" />
+
+--> Kết quả  
+<img width="817" height="806" alt="image" src="https://github.com/user-attachments/assets/e9f741f3-4f6b-4471-94b8-50c547cc1885" />  
 
 ### 4. Threshold  
+Thresholding là phương pháp phân tách ảnh dựa trên giá trị cường độ pixel. Mỗi pixel sẽ được so sánh với một ngưỡng (threshold); nếu lớn hơn hoặc nhỏ hơn ngưỡng thì sẽ được gán một giá trị khác (thường là 0 hoặc 255). Khi sử dụng THRESH_BINARY_INV, pixel trên ngưỡng sẽ thành 0 (đen) và pixel dưới hoặc bằng ngưỡng sẽ thành 255 (trắng). Nếu dùng THRESH_OTSU, OpenCV sẽ tự động chọn ngưỡng tối ưu thay vì dùng giá trị threshold do người dùng đặt.  
+
+<img width="804" height="22" alt="image" src="https://github.com/user-attachments/assets/49387686-0518-410d-ab19-36b3287ec434" />  
+
+--> Kết quả  
+<img width="818" height="806" alt="image" src="https://github.com/user-attachments/assets/9f14a3df-1bce-436d-8637-db1832d01c76" />  
+
 
 ## HƯỚNG DẪN  
 ### 1. Cài đặt thư viện quan trọng  
