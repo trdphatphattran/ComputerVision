@@ -21,7 +21,6 @@ Phat.imshow(img[:,:,::-1])
 ```
 --> Kết quả:  
 
-
 ### Bài 2: Sử dụng Harris Corner Detection tìm các keypoint trong ảnh  
 
 ### Bài 3: Sử dụng Band-pass filtering by Difference of Gaussians  
