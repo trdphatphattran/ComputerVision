@@ -20,16 +20,71 @@ img = cv2.imread('image.png')
 Phat.imshow(img[:,:,::-1])
 ```
 --> Kết quả:  
+<img width="547" height="296" alt="Image" src="https://github.com/user-attachments/assets/b46af11e-47e1-47a0-946a-efa1152dbd2a" />  
 
 ### Bài 2: Sử dụng Harris Corner Detection tìm các keypoint trong ảnh  
+```python
+dst = cv2.cornerHarris(gray, 2, 3, 0.04)
+dst = cv2.dilate(dst, None)
+img[dst > 0.01 * dst.max()] = [0, 0, 255]
+```
+Nguyên lý hoạt động của code:  
+
+<img width="234" height="40" alt="Image" src="https://github.com/user-attachments/assets/01a37324-1b62-4f01-ab2d-716fe0b25380" />  
+
+- Nếu R lớn: Đó là góc.
+- Nếu R < 0: Đó là cạnh.
+- Nếu |R| nhỏ: Đó là phẳng.
+
+--> Kết quả:  
+<img width="550" height="297" alt="Image" src="https://github.com/user-attachments/assets/e5f5ca78-4c74-42dc-90e4-8b8b6605105c" />  
 
 ### Bài 3: Sử dụng Band-pass filtering by Difference of Gaussians  
+```python
+blur1 = cv2.GaussianBlur(gray, (5, 5), sigmaX=1.0)
+blur2 = cv2.GaussianBlur(gray, (5, 5), sigmaX=2.0)
+dog = blur1 - blur2
+```
+Toán tử DoG xấp xỉ toán tử LoG, giúp phát hiện sự thay đổi cường độ sáng:  
+
+<img width="330" height="41" alt="Image" src="https://github.com/user-attachments/assets/dd787306-9c54-449b-a6fb-9d4611bf4836" />  
+
+--> Kết quả:  
+<img width="551" height="294" alt="Image" src="https://github.com/user-attachments/assets/b0ff9f01-c720-4a2d-95cc-ed65bf951d45" />  
 
 ### Bài 4: Kiểm tra ảnh qua Automatic Scale Selection  
+```python
+blur = cv2.GaussianBlur(gray_float, (ksize, ksize), sigma)
+log_normalized = cv2.Laplacian(blur, cv2.CV_32F) * (sigma**2)
+```
+Nếu sigma càng lớn, ảnh càng mờ, đồng nghĩa với việc các chi tiết nhỏ bị loại bỏ, chỉ còn lại các vùng lớn.  
+--> Kết quả:  
+
+<img width="550" height="291" alt="Image" src="https://github.com/user-attachments/assets/9c3942a4-aa35-47ab-a089-f92e479bb9a4" />  
 
 ### Bài 5: Kiểm tra ảnh qua Scale Invariant Detection  
+```python
+dst = cv2.cornerHarris(gray_float, blockSize=int(2*sigma), ksize=3, k=0.04)
+dst = cv2.dilate(dst, None)
+```
+Nếu vật thể to, alpha lớn -> blocksize lớn -> máy tính sẽ quét trên diện rộng -> nhận diện được các góc lớn mà không bị nhiễu bởi các chi tiết nhỏ.  
+--> Kết quả:  
+
+<img width="546" height="294" alt="Image" src="https://github.com/user-attachments/assets/70e16ce7-4f76-4135-bbbf-a1b0255baa08" />  
 
 ### Bài 6: Kiểm tra ảnh qua Scale-space blob detector  
+```python
+log = cv2.Laplacian(blur, cv2.CV_32F) * (sigma**2)
+scale_space.append(np.abs(log))
+&
+  if val > threshold and val == np.max(scale_space[i-1:i+2, y-1:y+2, x-1:x+2]):
+    radius = int(sigmas[i] * np.sqrt(2))
+    cv2.circle(result_img, (x, y), radius, (0, 255, 255), 1)
+```
+Tạo ra một ảnh Laplacian ở nhiều mức độ mờ khác nhau.  
+--> Kết quả:  
+
+<img width="547" height="296" alt="Image" src="https://github.com/user-attachments/assets/872034d2-ba4f-4307-b690-fbaaab4f7fa5" />  
 
 ### Bài 7: Thực hành với Bag-of-words detection  
 
