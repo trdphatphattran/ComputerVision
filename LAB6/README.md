@@ -19,6 +19,8 @@ import matplotlib.pyplot as Phat
 img = cv2.imread('image.png')
 Phat.imshow(img[:,:,::-1])
 ```
+--> Kết quả:  
+
 
 ### Bài 2: Sử dụng Harris Corner Detection tìm các keypoint trong ảnh  
 
