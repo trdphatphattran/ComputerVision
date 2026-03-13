@@ -7,7 +7,19 @@ GVHD: Đỗ Hữu Quân
 Năm học: 2025 - 2026  
 
 ## Phần 1: Lý thuyết  
+### 1. Keypoint Detection là gì?  
+- Keypoint Detection (Phát hiện điểm đặc trưng) là quá trình xác định các điểm "quan trọng" hoặc "thú vị" trong một bức ảnh. Những điểm này mang thông tin đặc biệt giúp máy tính có thể nhận diện, theo dõi hoặc khớp nối các bức ảnh với nhau.
 
+### 2. Các đặc trưng  
+- Một Keypoint là một vị trí $(x, y)$ trong ảnh mà tại đó có sự thay đổi rõ rệt về cường độ sáng theo nhiều hướng.
+  - Đặc điểm: Một điểm được coi là keypoint tốt nếu nó độc nhất và dễ nhận diện lại khi ảnh bị xoay, thay đổi ánh sáng hoặc thay đổi góc chụp.
+  - Ví dụ: Các góc (corners), các đốm (blobs) hoặc các điểm giao nhau giữa các cạnh thường là những keypoint lý tưởng. Các vùng phẳng (flat) hoặc đường thẳng (edges) thường không được chọn làm keypoint vì chúng dễ gây nhầm lẫn.
+ 
+### 3. Các tính chất  
+- Để một thuật toán phát hiện điểm đặc trưng hoạt động hiệu quả, nó cần đảm bảo các tính chất sau:  
+  - Tính bất biến (Invariance): Nếu ảnh bị xoay (rotation) hoặc thay đổi độ sáng (illumination), thuật toán vẫn phải tìm ra đúng điểm đó.  
+  - Tính độc lập quy mô (Scale Invariance): Dù vật thể ở xa (nhỏ) hay ở gần (to), điểm đặc trưng vẫn phải được phát hiện chính xác.  
+  - Tính lặp lại (Repeatability): Nếu chụp hai bức ảnh của cùng một cảnh, thuật toán phải tìm thấy cùng một tập hợp các điểm đặc trưng trên cả hai ảnh.  
 
 ## Phần 2: Bài tập  
 ### Bài 1: Khai báo thư viện và ảnh đầu vào  
@@ -87,16 +99,85 @@ Tạo ra một ảnh Laplacian ở nhiều mức độ mờ khác nhau.
 <img width="547" height="296" alt="Image" src="https://github.com/user-attachments/assets/872034d2-ba4f-4307-b690-fbaaab4f7fa5" />  
 
 ### Bài 7: Thực hành với Bag-of-words detection  
+```python
+k = 20
+kmeans = KMeans(n_clusters=k, n_init=10, random_state=0)
+kmeans.fit(descriptors)
+```
+Vì có quá nhiều mảnh ghép (hàng ngàn cái), máy tính không thể nhớ hết được. Nó dùng thuật toán K-Means để nhóm những mảnh ghép trông giống nhau lại thành một nhóm. Ở đây k = 20 nghĩa là ta ép máy tính phải tạo ra đúng 20 nhóm mẫu. Mỗi nhóm đại diện cho một loại chi tiết tiêu biểu.  
+--> Kết quả:  
+
+<img width="548" height="412" alt="Image" src="https://github.com/user-attachments/assets/07a0aae9-d6ac-4f20-8248-58335c35c015" />  
 
 ### Bài 8: Ghép ảnh Image Panoramas  
+```python
+bf = cv2.BFMatcher()
+matches = bf.knnMatch(des1, des2, k=2)
+
+good_matches = []
+for m, n in matches:
+    if m.distance < 0.75 * n.distance:
+        good_matches.append(m)
+&
+H, mask = cv2.findHomography(dst_pts, src_pts, cv2.RANSAC, 5.0)
+```
+Để dán hai bức ảnh lại với nhau, máy tính cần biết chúng khớp nhau ở đâu. Nó lấy các mảnh ghép từ ảnh trái đối chiếu với ảnh phải. Chỉ những cặp nào cực kỳ giống nhau mới được giữ lại.  
+--> Kết quả:  
+
+<img width="551" height="224" alt="Image" src="https://github.com/user-attachments/assets/bb7d5868-906a-435f-932d-ae7d4d70cedc" />  
 
 ### Bài 9: Ghép ảnh Automatic mosaicing  
+```python
+stitcher = cv2.Stitcher_create(cv2.Stitcher_PANORAMA)
+status, result = stitcher.stitch(images)
+```
+Chúng ta chỉ cần đưa vào tập hợp các ảnh, sau đó máy tính tự so khớp từng điểm ảnh lại với nhau và nó tự ghép lại thành một ảnh hoàn chỉnh.  
+--> Kết quả:  
+
+<img width="551" height="269" alt="Image" src="https://github.com/user-attachments/assets/09064915-79ef-4024-8409-cd8ac2fa78c6" />  
 
 ### Bài 10: Sử dụng Wide base-line stereo  
+```python
+sift = cv2.SIFT_create()
+kp1, des1 = sift.detectAndCompute(gray1, None)
+kp2, des2 = sift.detectAndCompute(gray2, None)
+&
+FLANN_INDEX_KDTREE = 1
+index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)
+search_params = dict(checks=50)
+flann = cv2.FlannBasedMatcher(index_params, search_params)
+matches = flann.knnMatch(des1, des2, k=2)
+&
+  F, mask = cv2.findFundamentalMat(pts1, pts2, cv2.FM_RANSAC, 3.0, 0.99)
+```
+Sử dụng SIFT để phát hiện ra các keypoints detection ổn định nhất, đây là bước quan trọng nhất cho Wide Baseline Stereo. Sau đó chúng ta dùng FLANN để tìm feature tương ứng giữa 2 ảnh.  
+--> Kết quả:  
+
+<img width="1212" height="467" alt="Image" src="https://github.com/user-attachments/assets/87d4fbcc-db38-4bdd-baf1-b58362016b08" />  
 
 ### Bài 11: CBIR (content-based image retrieval)  
+```python
+    hist1 = cv2.calcHist([hsv_img1], [0, 1], None, [50, 60], [0, 180, 0, 256])
+    hist2 = cv2.calcHist([hsv_img2], [0, 1], None, [50, 60], [0, 180, 0, 256])
+&
+    similarity = cv2.compareHist(hist1, hist2, cv2.HISTCMP_CORREL)
+```
+CBIR được thể hiện qua việc so sánh đặc trưng màu sắc giữa hai bức ảnh để tính toán độ tương đồng, bằng cách phân tích chính dữ liệu pixel bên trong ảnh.  
+--> Kết quả:  
+
+<img width="790" height="297" alt="Image" src="https://github.com/user-attachments/assets/fb93f051-49f3-49e0-ac0d-6a0394b6eac5" />  
 
 ### Bài 12: Bag-of-word with SIFT + Histogram  
+```python
+def build_histogram(descriptors, kmeans, k):
+    labels = kmeans.predict(descriptors)
+    hist, _ = np.histogram(labels, bins=range(k + 1))
+    return hist.astype(float) / np.sum(hist)
+```
+Đầu vào của hàm này chính là các mô tả SIFT. SIFT cung cấp các nội dung (như góc cạnh, ...) thay vì chỉ là màu sắc đơn thuần. Mỗi điểm SIFT sẽ được gán cho một nhãn tương ứng với điểm gần giống nó nhất.  
+--> Kết quả:  
+
+<img width="558" height="408" alt="Image" src="https://github.com/user-attachments/assets/eb386b49-e0d2-4282-9d1d-f9c935a65089" />  
 
 ## HƯỚNG DẪN  
 ### 1. Cài đặt thư viện quan trọng  
