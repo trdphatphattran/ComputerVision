@@ -10,7 +10,15 @@ Năm học: 2025 - 2026
 
 
 ## Phần 2: Bài tập  
-### Bài 1: Khai báo thư viện ảnh  
+### Bài 1: Khai báo thư viện và ảnh đầu vào  
+```python
+import numpy as np
+import cv2
+import matplotlib.pyplot as Phat
+
+img = cv2.imread('image.png')
+Phat.imshow(img[:,:,::-1])
+```
 
 ### Bài 2: Sử dụng Harris Corner Detection tìm các keypoint trong ảnh  
 
