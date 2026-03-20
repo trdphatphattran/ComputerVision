@@ -99,11 +99,55 @@ edges = cv.Canny(blur, 100, 200)
 
 # LAB 6: NHẬN DIỆN ẢNH (IMAGE DETECTION)  
 ## Phần 1: Lý thuyết  
+Nhận diện ảnh (Image Recognition) là quá trình giúp máy tính hiểu và xác định nội dung trong ảnh, ví dụ như:  
+- Ảnh có người, chó, xe.  
+- Nhận ra khuôn mặt, vật thể, hoặc chữ viết.  
 
 ## Phần 2: Bài tập  
 ### Bài 1: Tham khảo đoạn code trên để tạo 1 đoạn code mới, kết hợp sử dụng hình ảnh sau và file: haarcascade_frontalface_default.xml (tải về từ đường dẫn bên dưới) để nhận diện khuôn mặt:  
+```python
+stop_data = cv2.CascadeClassifier('/content/haarcascade_frontalface_default.xml')
+found = stop_data.detectMultiScale(img_gray, minSize = (20, 20))
+amount_found = len(found)
+```
+- Sử dụng hàm detectMultiScale() để phát hiện khuôn mặt.
+- Hàm này có chức năng:
+  - Quét toàn bộ ảnh.
+  - Tìm vùng giống khuôn mặt.
+  - Trả về hình ảnh khuôn mặt nằm trong bounding box.
+
+--> Kết quả:  
+
+<img width="494" height="338" alt="image" src="https://github.com/user-attachments/assets/177e27ca-5f7f-406d-b3ce-88a343c265b4" />
+
 
 ### Bài 2: Sử dụng các tham khảo và hình ảnh trên, có thể sử dụng thêm các ảnh tập thể, kỷ yếu khác để nhận diện: Nụ cười, tai, mắt, mũi, miệng, … của người trong bức ảnh.  
+```python
+faces = face_cascade.detectMultiScale(img_gray, minSize=(20, 20))
+```
+- Đây là bước quét toàn bộ ảnh để tìm vị trí khuôn mặt.
+- Sau khi quét được khuôn mặt, ta tiến hành đến nhận diện mắt:
+```python
+eyes = eye_cascade.detectMultiScale(roi_gray)
+```
+- Nhận diện mũi:
+```python
+noses = nose_cascade.detectMultiScale(roi_gray)
+```
+- Nhận diện miệng:
+```python
+mouths = mouth_cascade.detectMultiScale(roi_gray)
+```
+- Tóm lại, code làm theo trình tự sau:
+  - Nhận diện khuôn mặt trước.
+  - Cắt vùng khuôn mặt (ROI).
+  - Trong vùng đó có: nhận diện mắt, mũi, miệng.
+  - Vẽ khung để hiển thị.
+
+--> Kết quả:  
+
+<img width="493" height="339" alt="image" src="https://github.com/user-attachments/assets/44bc0d14-76a4-4945-91f3-48a75d858d2b" />  
+
 
 ## HƯỚNG DẪN  
 ### 1. Cài đặt thư viện quan trọng  
